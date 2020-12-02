@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\project\_ToolProject\Unity-Design-Pattern" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Behavioral Patterns" t="Include">
+          <e p="Chain of Responsibility Pattern" t="Include">
+            <e p="Example1" t="Include">
+              <e p="ChainOfResponsibilityExample1.cs" t="Include" />
+            </e>
+            <e p="Example2" t="Include">
+              <e p="ChainOfResponsibilityExample2.cs" t="Include" />
+            </e>
+            <e p="Structure" t="Include">
+              <e p="ChainOfResponsibilityStructure.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Command Pattern" t="Include">
+            <e p="Example1" t="Include">
+              <e p="CommandExample1.cs" t="Include" />
+            </e>
+            <e p="Example2" t="Include">
+              <e p="DeviceButton.cs" t="Include" />
+              <e p="ICommand.cs" t="Include" />
+              <e p="IElectronicDevice.cs" t="Include" />
+              <e p="Radio.cs" t="Include" />
+              <e p="Television.cs" t="Include" />
+              <e p="TestCommandPattern.cs" t="Include" />
+              <e p="TurnItAllOff.cs" t="Include" />
+              <e p="TurnTVOff.cs" t="Include" />
+              <e p="TurnTVOn.cs" t="Include" />
+              <e p="TurnVolumeDown.cs" t="Include" />
+              <e p="TurnVolumeUp.cs" t="Include" />
+              <e p="TVRemove.cs" t="Include" />
+            </e>
+            <e p="Example3" t="Include">
+              <e p="Command.cs" t="Include" />
+              <e p="InputHandler.cs" t="Include" />
+              <e p="MoveCommand.cs" t="Include" />
+              <e p="MoveCommandReceiver.cs" t="Include" />
+            </e>
+            <e p="Example4" t="Include">
+              <e p="CommandPatternExample4.cs" t="Include" />
+            </e>
+            <e p="Structure" t="Include">
+              <e p="CommandStructure.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Interpreter Pattern" t="Include">
+            <e p="Example1" t="Include">
+              <e p="InterpreterExample1.cs" t="Include" />
+            </e>
+            <e p="Example2" t="Include">
+              <e p="InterpreterExample2.cs" t="Include" />
+            </e>
+            <e p="Structure" t="Include">
+              <e p="InterpreterStructrue.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Iterator Pattern" t="Include">
+            <e p="Example1" t="Include">
+              <e p="IteratorExample1.cs" t="Include" />
+            </e>
+            <e p="Example2" t="Include">
+              <e p="IteratorExample2.cs" t="Include" />
+            </e>
+            <e p="Structure" t="Include">
+              <e p="IteratorStructure.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Mediator Pattern" t="Include">
+            <e p="Example1" t="Include">
+              <e p="MediatorExample1.cs" t="Include" />
+            </e>
+            <e p="Example2" t="Include">
+              <e p="MediatorExample2.cs" t="Include" />
+            </e>
+            <e p="Structure" t="Include">
+              <e p="MediatorStructure.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Memento Pattern" t="Include">
+            <e p="Example1" t="Include">
+              <e p="MementoExample1.cs" t="Include" />
+            </e>
+            <e p="Example2" t="Include">
+              <e p="MementoExample2.cs" t="Include" />
+            </e>
+            <e p="Structure" t="Include">
+              <e p="MementoStructure.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Observer Pattern" t="Include">
+            <e p="Example1" t="Include">
+              <e p="ObserverExample1.cs" t="Include" />
+            </e>
+            <e p="Structure" t="Include">
+              <e p="ObserverStructure.cs" t="Include" />
+            </e>
+          </e>
+          <e p="State Pattern" t="Include">
+            <e p="Exmaple1" t="Include">
+              <e p="StateExample1.cs" t="Include" />
+            </e>
+            <e p="Exmaple2" t="Include">
+              <e p="StateExmaple2.cs" t="Include" />
+            </e>
+            <e p="Exmaple3" t="Include">
+              <e p="ATMMachine.cs" t="Include" />
+              <e p="ATMState.cs" t="Include" />
+              <e p="HasCard.cs" t="Include" />
+              <e p="HasPin.cs" t="Include" />
+              <e p="NoCard.cs" t="Include" />
+              <e p="NoCash.cs" t="Include" />
+              <e p="TestATMMachine.cs" t="Include" />
+            </e>
+            <e p="Exmaple4" t="Include">
+              <e p="DrivingState.cs" t="Include" />
+              <e p="DuckingState.cs" t="Include" />
+              <e p="Heroine.cs" t="Include" />
+              <e p="HeroineBaseState.cs" t="Include" />
+              <e p="JumpingState.cs" t="Include" />
+              <e p="StandingState.cs" t="Include" />
+              <e p="TestHeroine.cs" t="Include" />
+            </e>
+            <e p="Exmaple5" t="Include">
+              <e p="StatePatternExample5.cs" t="Include" />
+            </e>
+            <e p="Structure" t="Include">
+              <e p="StateStructure.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Strategy Pattern" t="Include">
+            <e p="Example2" t="Include">
+              <e p="BadCodeExample.cs" t="Include" />
+              <e p="StrategyPatternExample2.cs" t="Include" />
+            </e>
+            <e p="Exmaple1" t="Include">
+              <e p="StrategyPatternExample1.cs" t="Include" />
+            </e>
+            <e p="Structure" t="Include">
+              <e p="StrategyStructure.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Template Method Pattern" t="Include">
+            <e p="Exmaple1" t="Include">
+              <e p="TemplateMethodPatternExample1.cs" t="Include" />
+            </e>
+            <e p="Structure" t="Include">
+              <e p="TemplateMethodStructure.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Visitor Pattern" t="Include">
+            <e p="Exmaple1" t="Include">
+              <e p="VisitorPatternExample1.cs" t="Include" />
+            </e>
+            <e p="Exmaple2" t="Include">
+              <e p="VisitorPatternExample2.cs" t="Include" />
+            </e>
+            <e p="Structure" t="Include">
+              <e p="VisitorStructure.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Creational Patterns" t="Include">
+          <e p="Abstract Factory Pattern" t="Include">
+            <e p="Example1" t="Include">
+              <e p="AbstractFactoryPatternExample1.cs" t="Include" />
+            </e>
+            <e p="Example2" t="Include">
+              <e p="AbstractFactoryPatternExample2.cs" t="Include" />
+            </e>
+            <e p="Structure" t="Include">
+              <e p="AbstractFactoryStructrue.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Builder Pattern" t="Include">
+            <e p="Example1" t="Include">
+              <e p="BuilderPatternExample1.cs" t="Include" />
+            </e>
+            <e p="Example2" t="Include">
+              <e p="BuilderPatternExample2.cs" t="Include" />
+            </e>
+            <e p="Structure" t="Include">
+              <e p="BuilderStructure.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Factory Method Pattern" t="Include">
+            <e p="Example1" t="Include">
+              <e p="FactoryMethodPatternExample1.cs" t="Include" />
+            </e>
+            <e p="Example2" t="Include">
+              <e p="FactoryMethodPatternExample2.cs" t="Include" />
+            </e>
+            <e p="Structure" t="Include">
+              <e p="FactoryMethodStructure.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Prototype Pattern" t="Include">
+            <e p="Example1" t="Include">
+              <e p="PrototypePatternExample1.cs" t="Include" />
+            </e>
+            <e p="Example2" t="Include">
+              <e p="PrototypePatternExample2.cs" t="Include" />
+            </e>
+            <e p="Structure" t="Include">
+              <e p="PrototypeStructure.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Singleton Pattern" t="Include">
+            <e p="Example1" t="Include">
+              <e p="SingletonPatternExample1.cs" t="Include" />
+            </e>
+            <e p="Example2" t="Include">
+              <e p="SingletonPatternExample2.cs" t="Include" />
+            </e>
+            <e p="Example3" t="Include">
+              <e p="SingletonPatternExample3.cs" t="Include" />
+            </e>
+            <e p="Structure" t="Include">
+              <e p="SingletonStructure.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Game Programming Patterns" t="Include">
+          <e p="Component Pattern" t="Include">
+            <e p="Example" t="Include">
+              <e p="ComponentPatternExample.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Data Locality Pattern" t="Include">
+            <e p="Example" t="Include">
+              <e p="DataLocalityPatternExample.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Dirty Flag Pattern" t="Include">
+            <e p="Example" t="Include">
+              <e p="DirtyFlagPatternExample.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Event Queue Pattern" t="Include">
+            <e p="Example" t="Include">
+              <e p="EventQueue.cs" t="Include" />
+              <e p="EventQueueManager.cs" t="Include" />
+              <e p="EventQueuePatternExample.cs" t="Include" />
+            </e>
+            <e p="Example2" t="Include">
+              <e p="EventQueuePatternExample2.cs" t="Include" />
+            </e>
+            <e p="Example3" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="EventManger.cs" t="Include" />
+                <e p="EventQueuePatternExample3.cs" t="Include" />
+                <e p="EventType.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Game Loop Pattern" t="Include">
+            <e p="Example" t="Include">
+              <e p="GameLoopPatternExample.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Object Pool Pattern" t="Include">
+            <e p="Example" t="Include">
+              <e p="Script" t="Include">
+                <e p="Core" t="Include">
+                  <e p="PoolManager.cs" t="Include" />
+                  <e p="PoolObject.cs" t="Include" />
+                </e>
+                <e p="Example" t="Include">
+                  <e p="ObjectPoolExample.cs" t="Include" />
+                  <e p="PoolObjectBehaviour.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="Service Locator Pattern" t="Include">
+            <e p="Example" t="Include">
+              <e p="ServiceLocatorPatternExample.cs" t="Include" />
+            </e>
+          </e>
+          <e p="SubclassSandbox Pattern" t="Include">
+            <e p="Example" t="Include">
+              <e p="FlashSpeed.cs" t="Include" />
+              <e p="GroundDive.cs" t="Include" />
+              <e p="SkyLaunch.cs" t="Include" />
+              <e p="SuperPower.cs" t="Include" />
+              <e p="TestSubclassSandbox.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Type Object Pattern" t="Include">
+            <e p="Example" t="Include">
+              <e p="TypeObjectPatternExample.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Structural Patterns" t="Include">
+          <e p="Adapter Pattern" t="Include">
+            <e p="Exmaple1" t="Include">
+              <e p="AdapterPatternExample1.cs" t="Include" />
+            </e>
+            <e p="Exmaple2" t="Include">
+              <e p="AdapterPatternExample2.cs" t="Include" />
+            </e>
+            <e p="Structure" t="Include">
+              <e p="AdapterStructure.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Bridge Pattern" t="Include">
+            <e p="Exmaple1" t="Include">
+              <e p="BridgePatternExample1.cs" t="Include" />
+            </e>
+            <e p="Exmaple2" t="Include">
+              <e p="BridgePatternExample2.cs" t="Include" />
+            </e>
+            <e p="Structure" t="Include">
+              <e p="BridgeStructure.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Composite Pattern" t="Include">
+            <e p="Exmaple1" t="Include">
+              <e p="CompositePatternExample1.cs" t="Include" />
+            </e>
+            <e p="Exmaple2" t="Include">
+              <e p="CompositePatternExample2.cs" t="Include" />
+            </e>
+            <e p="Structure" t="Include">
+              <e p="CompositeStructure.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Decorator Pattern" t="Include">
+            <e p="Exmaple1" t="Include">
+              <e p="DecoratorPatternExample1.cs" t="Include" />
+            </e>
+            <e p="Exmaple2" t="Include">
+              <e p="DecoratorPatternExample2.cs" t="Include" />
+            </e>
+            <e p="Structure" t="Include">
+              <e p="DecoratorStructure.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Facade Pattern" t="Include">
+            <e p="Exmaple1" t="Include">
+              <e p="FacadePatternExample1.cs" t="Include" />
+            </e>
+            <e p="Exmaple2" t="Include">
+              <e p="FacadePatternExample2.cs" t="Include" />
+            </e>
+            <e p="Structure" t="Include">
+              <e p="FacadeStructure.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Flyweight Pattern" t="Include">
+            <e p="Exmaple1" t="Include">
+              <e p="FlyweightPatternExample1.cs" t="Include" />
+            </e>
+            <e p="Structure" t="Include">
+              <e p="FlyweightStructure.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Proxy Pattern" t="Include">
+            <e p="Exmaple1" t="Include">
+              <e p="ProxyPatternExample1.cs" t="Include" />
+            </e>
+            <e p="Structure" t="Include">
+              <e p="ProxyStructure.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="Unity-Design-Pattern.sln" t="IncludeFlat" />
+    </e>
+    <e p="C:\Users\Administrator\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Administrator\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Unity-Design-Pattern.990073566.00" t="ExcludeRecursive" />
+  </component>
+</project>
