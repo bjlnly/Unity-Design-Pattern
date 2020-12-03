@@ -8,7 +8,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 //This real-world code demonstrates the Prototype pattern in which new Color objects are created by copying pre-existing, user-defined Colors of the same type.
-
+//此真实世界的代码演示了原型模式，在该模式中，通过复制相同类型的预先存在的用户定义的颜色来创建新的颜色对象。
 namespace PrototypePatternExample1
 {
     public class PrototypePatternExample1 : MonoBehaviour

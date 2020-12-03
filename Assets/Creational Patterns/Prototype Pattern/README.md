@@ -11,12 +11,13 @@ Specify the kind of objects to create using a prototypical instance, and create 
 
 The classes and objects participating in this pattern are:
 
-### Prototype  (ColorPrototype)
-* declares an interface for cloning itself
+### Prototype  (ColorPrototype) 原型
+* declares an interface for cloning itself 
+<br>声明用于克隆自身的接口
 
-### ConcretePrototype  (Color)
+### ConcretePrototype  (Color) 具体的原型
 * implements an operation for cloning itself
-
-### Client  (ColorManager)
+<br>实现克隆自身的操作
+### Client  (ColorManager) 委托人
 * creates a new object by asking a prototype to clone itself
-
+<br>通过要求原型克隆自身来创建新对象 

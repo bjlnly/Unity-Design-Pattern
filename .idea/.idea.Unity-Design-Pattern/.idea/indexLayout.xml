@@ -27,7 +27,6 @@
       <Path>Media</Path>
       <Path>Temp</Path>
       <Path>UML_Picture</Path>
-      <Path>UnityPackageManager</Path>
       <Path>obj</Path>
     </explicitExcludes>
   </component>

@@ -9,7 +9,8 @@ using System.Collections.Generic;
 
 //This real-world code demonstrates the Singleton pattern as a LoadBalancing object. Only a single instance (the singleton) of the class can be created 
 //because servers may dynamically come on- or off-line and every request must go throught the one object that has knowledge about the state of the (web) farm.
-
+//这段真实的代码演示了作为负载平衡对象的Singleton模式。只能创建类的单个实例,
+//因为服务器可以动态地上线或离线，并且每个请求都必须通过一个了解(web)场状态的对象。
 namespace SingletonPatternExample1
 {
     public class SingletonPatternExample1 : MonoBehaviour
@@ -66,6 +67,8 @@ namespace SingletonPatternExample1
             // 'Double checked locking' pattern which (once
             // the instance exists) avoids locking each
             // time the method is invoked
+            //支持多线程应用程序通过
+            //“双重检查锁定”模式,避免锁定每个实例方法被调用时
             if (_instance == null)
             {
                 lock (syncLock)
