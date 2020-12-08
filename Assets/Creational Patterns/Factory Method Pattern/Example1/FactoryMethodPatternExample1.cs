@@ -8,7 +8,8 @@ using System.Collections.Generic;
 
 //This real-world code demonstrates the Factory method offering flexibility in creating different documents. 
 //The derived Document classes Report and Resume instantiate extended versions of the Document class. Here, the Factory Method is called in the constructor of the Document base class.
-
+//这段真实的代码演示了Factory方法，它可以灵活地创建不同的文档。
+//派生文档类报告和恢复实例化Document类的扩展版本。这里，在Document基类的构造函数中调用Factory方法。
 namespace FactoryMethodPatternExample1
 {
     public class FactoryMethodPatternExample1 : MonoBehaviour

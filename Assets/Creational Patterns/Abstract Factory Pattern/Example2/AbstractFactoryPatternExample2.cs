@@ -7,7 +7,11 @@
 // you can model everything you can image and have those objects interact through common interfaces
 
 // negative: can get very complicated
+//允许使用一系列相关对象，而不指定具体的类。
+//当存在多个可以动态添加或更改的对象时。
+//您可以对您能想象到的一切进行建模，并让这些对象通过公共接口进行交互。
 
+//负面：可能会变得非常复杂
 
 using UnityEngine;
 using System.Collections;
@@ -29,12 +33,13 @@ namespace AbstractFactoryPatternExample2
         UFO
     }
 
-
+    // 抽象类  敌舰建造  抽象订单
     public abstract class EnemyShipBuilding
     {
         // abstract order form:
         protected abstract EnemyShip MakeEnemyShip(ShipType type);
 
+        // 飞船订单
         public EnemyShip orderShip(ShipType type)
         {
             EnemyShip ship = MakeEnemyShip(type);
@@ -48,6 +53,7 @@ namespace AbstractFactoryPatternExample2
         }
     }
 
+    // 船只建造具体类
     public class UFOEnemyShipBuilding : EnemyShipBuilding
     {
         // Make Ship varies per ship type...
@@ -69,13 +75,14 @@ namespace AbstractFactoryPatternExample2
 
 
 
-
+    // 抽象工厂  敌船工厂
     public interface IEnemyShipFactory
     {
         IESWeapon AddESGun();
         IESEngine AddESEngine();
     }
-
+    
+    // 具体工厂  UFO工厂
     public class UFOEnemyShipFactory : IEnemyShipFactory
     {
         // each factory can add different weapons and stuff
@@ -93,13 +100,16 @@ namespace AbstractFactoryPatternExample2
 
 
 
-
+    // 敌人船只  抽象产品组
     public abstract class EnemyShip
     {
         public string name;
+        // 引擎接口
         protected IESEngine engine;
+        // 武器接口
         protected IESWeapon weapon;
 
+        // 制作船  抽象接口
         public abstract void MakeShip();
 
         public void DisplayShip()
@@ -123,6 +133,7 @@ namespace AbstractFactoryPatternExample2
         }
     }
 
+    // 具体产品组  UFO
     public class UFOEnemyShip : EnemyShip
     {
         IEnemyShipFactory factory;
@@ -141,18 +152,19 @@ namespace AbstractFactoryPatternExample2
     }
 
 
-
+    // 武器接口
     // possible Weapons to swap in and out
     public interface IESWeapon
     {
         string ToStringEX();
     }
-
+    // 引擎接口
     public interface IESEngine
     {
         string ToStringEX();
     }
 
+    // 武器接口的具体实现
     public class ESUFOGun : IESWeapon
     {
         public string ToStringEX()
@@ -160,6 +172,7 @@ namespace AbstractFactoryPatternExample2
             return "20 damage";
         }
     }
+    // 引擎接口的具体实现
     public class ESUFOEngine : IESEngine
     {
         public string ToStringEX()

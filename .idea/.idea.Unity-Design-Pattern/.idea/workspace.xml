@@ -1,13 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7d8c5e3b-b84c-4ae8-9209-9abb1b4fc342" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Design-Pattern/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Design-Pattern/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Design-Pattern/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Design-Pattern/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Design-Pattern/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Design-Pattern/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Creational Patterns/Prototype Pattern/Example1/PrototypePatternExample1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creational Patterns/Prototype Pattern/Example1/PrototypePatternExample1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Creational Patterns/Prototype Pattern/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creational Patterns/Prototype Pattern/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Creational Patterns/Singleton Pattern/Example1/SingletonPatternExample1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creational Patterns/Singleton Pattern/Example1/SingletonPatternExample1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Creational Patterns/Singleton Pattern/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creational Patterns/Singleton Pattern/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Creational Patterns/Abstract Factory Pattern/Example1/AbstractFactoryPatternExample1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creational Patterns/Abstract Factory Pattern/Example1/AbstractFactoryPatternExample1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Creational Patterns/Abstract Factory Pattern/Example2/AbstractFactoryPatternExample2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creational Patterns/Abstract Factory Pattern/Example2/AbstractFactoryPatternExample2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Creational Patterns/Abstract Factory Pattern/Structure/AbstractFactoryStructrue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creational Patterns/Abstract Factory Pattern/Structure/AbstractFactoryStructrue.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Creational Patterns/Builder Pattern/Example1/BuilderPatternExample1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creational Patterns/Builder Pattern/Example1/BuilderPatternExample1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Creational Patterns/Builder Pattern/Example2/BuilderPatternExample2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creational Patterns/Builder Pattern/Example2/BuilderPatternExample2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Creational Patterns/Builder Pattern/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creational Patterns/Builder Pattern/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Creational Patterns/Builder Pattern/Structure/BuilderStructure.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creational Patterns/Builder Pattern/Structure/BuilderStructure.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Creational Patterns/Factory Method Pattern/Example1/FactoryMethodPatternExample1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creational Patterns/Factory Method Pattern/Example1/FactoryMethodPatternExample1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Creational Patterns/Factory Method Pattern/Structure/FactoryMethodStructure.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creational Patterns/Factory Method Pattern/Structure/FactoryMethodStructure.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Creational Patterns/Singleton Pattern/Structure/SingletonStructure.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creational Patterns/Singleton Pattern/Structure/SingletonStructure.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +43,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/63DD8BF9-8CFA-4BA9-85AF-735EF1A56BA9/97/940c20ed/Object.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/project/_ToolProject/Unity-Design-Pattern/ProjectSettings/EditorSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/63DD8BF9-8CFA-4BA9-85AF-735EF1A56BA9/00/c40f5b2e/ICloneable.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/project/_ToolProject/Unity-Design-Pattern/Assets/Creational Patterns/Singleton Pattern/Example1/SingletonPatternExample1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/63DD8BF9-8CFA-4BA9-85AF-735EF1A56BA9/a5/5612b8e1/Random.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../31.babybuschinese.dev2019/Assets/_MiaoxueCharacter/Scripts/ChineseCharacters/WirteWord/WriteWordSystem.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -32,6 +54,16 @@
         <option value="$PROJECT_DIR$/Assets/Creational Patterns/Singleton Pattern/Example1/SingletonPatternExample1.cs" />
         <option value="$PROJECT_DIR$/Assets/Creational Patterns/Prototype Pattern/README.md" />
         <option value="$PROJECT_DIR$/Assets/Creational Patterns/Prototype Pattern/Example1/PrototypePatternExample1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Creational Patterns/Factory Method Pattern/Example1/FactoryMethodPatternExample1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Creational Patterns/Abstract Factory Pattern/Example1/AbstractFactoryPatternExample1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Creational Patterns/Abstract Factory Pattern/Example2/AbstractFactoryPatternExample2.cs" />
+        <option value="$PROJECT_DIR$/Assets/Creational Patterns/Factory Method Pattern/Structure/FactoryMethodStructure.cs" />
+        <option value="$PROJECT_DIR$/Assets/Creational Patterns/Abstract Factory Pattern/Structure/AbstractFactoryStructrue.cs" />
+        <option value="$PROJECT_DIR$/Assets/Creational Patterns/Singleton Pattern/Structure/SingletonStructure.cs" />
+        <option value="$PROJECT_DIR$/Assets/Creational Patterns/Builder Pattern/README.md" />
+        <option value="$PROJECT_DIR$/Assets/Creational Patterns/Builder Pattern/Example1/BuilderPatternExample1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Creational Patterns/Builder Pattern/Example2/BuilderPatternExample2.cs" />
+        <option value="$PROJECT_DIR$/Assets/Creational Patterns/Builder Pattern/Structure/BuilderStructure.cs" />
       </list>
     </option>
   </component>
@@ -48,7 +80,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="?open leo" />
+    </option>
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -78,7 +116,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606727264589</updated>
-      <workItem from="1606727296837" duration="15724000" />
+      <workItem from="1606727296837" duration="19361000" />
+      <workItem from="1606992273106" duration="595000" />
+      <workItem from="1607043924629" duration="20160000" />
     </task>
     <servers />
   </component>
@@ -87,21 +127,45 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="480" y="353" width="1056" height="322" key="#C#" timestamp="1606985008985">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="480" y="353" width="1056" height="322" key="#C#/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606985008985" />
     <state x="372" y="5" key="CommitChangelistDialog2" timestamp="1606732390802">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="372" y="5" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606732390802" />
-    <state x="93" y="93" width="1350" height="638" key="VCS.FileHistoryDialog" timestamp="1606980184066">
+    <state x="93" y="93" width="1350" height="638" key="VCS.FileHistoryDialog" timestamp="1607409961983">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="93" y="93" width="1350" height="638" key="VCS.FileHistoryDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606980184066" />
+    <state x="93" y="93" width="1350" height="638" key="VCS.FileHistoryDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607409961983" />
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1606877563458">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606877563458" />
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1606985231959">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606985231959" />
+    <state x="806" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1607395980257">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="806" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607395980257" />
   </component>
 </project>

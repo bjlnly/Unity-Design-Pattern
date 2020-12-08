@@ -12,13 +12,15 @@ namespace FactoryMethodStructure
     {
 	    void Start ( )
         {
-            // An array of creators
+            // An array of creators  一系列的创造者  此处应该使用工厂类
             Creator[] creators = new Creator[2];
 
             creators[0] = new ConcreteCreatorA();
             creators[1] = new ConcreteCreatorB();
 
-            // Iterate over creators and create products
+            // Iterate over creators and create products 
+            // 用抽象的创造者,构建抽象的产品
+            // 外层类完全是面向抽象开发
             foreach (Creator creator in creators)
             {
                 Product product = creator.FactoryMethod();
@@ -28,36 +30,37 @@ namespace FactoryMethodStructure
     }
 
     /// <summary>
-    /// The 'Product' abstract class
+    /// The 'Product' abstract class 抽象产品
     /// </summary>
     abstract class Product
     {
     }
 
     /// <summary>
-    /// A 'ConcreteProduct' class
+    /// A 'ConcreteProduct' class 具体产品A
     /// </summary>
     class ConcreteProductA : Product
     {
     }
 
     /// <summary>
-    /// A 'ConcreteProduct' class
+    /// A 'ConcreteProduct' class 具体产品B
     /// </summary>
     class ConcreteProductB : Product
     {
     }
 
     /// <summary>
-    /// The 'Creator' abstract class
+    /// The 'Creator' abstract class 抽象的创造者
     /// </summary>
     abstract class Creator
     {
+        // 基类的创造者只做声明
         public abstract Product FactoryMethod();
     }
 
     /// <summary>
-    /// A 'ConcreteCreator' class
+    /// A 'ConcreteCreator' class 具体创造者A,创造了具体产品A ,返回了抽象产品
     /// </summary>
     class ConcreteCreatorA : Creator
     {
@@ -68,7 +71,7 @@ namespace FactoryMethodStructure
     }
 
     /// <summary>
-    /// A 'ConcreteCreator' class
+    /// A 'ConcreteCreator' class 具体创造者B
     /// </summary>
     class ConcreteCreatorB : Creator
     {

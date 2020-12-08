@@ -8,7 +8,8 @@ using System.Collections;
 
 //This structural code demonstrates the Abstract Factory pattern creating parallel hierarchies of objects.
 //Object creation has been abstracted and there is no need for hard-coded class names in the client code.
-
+//此结构代码演示了抽象工厂模式创建对象的并行层次结构。
+//对象创建已抽象化，客户端代码中不需要硬编码的类名
 namespace AbstractFactoryPatternExample1
 {
     public class AbstractFactoryPatternExample1 : MonoBehaviour

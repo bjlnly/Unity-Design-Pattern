@@ -11,7 +11,8 @@ public class PrototypeStructure : MonoBehaviour
     void Start( )
     {
         // Create two instances and clone each
-
+        // 创建2个实例 并且克隆自己
+        // p1是克隆原型  c1是克隆后的对象 ID属性是一样的
         ConcretePrototype1 p1 = new ConcretePrototype1("I");
         ConcretePrototype1 c1 = (ConcretePrototype1)p1.Clone();
         Debug.Log("Cloned: "+c1.Id);
@@ -24,7 +25,7 @@ public class PrototypeStructure : MonoBehaviour
 }
 
 /// <summary>
-/// The 'Prototype' abstract class
+/// The 'Prototype' abstract class 原型抽象类  定义用已有原型创建新实例的方法--clone
 /// </summary>
 abstract class Prototype
 {
@@ -46,7 +47,7 @@ abstract class Prototype
 }
 
 /// <summary>
-/// A 'ConcretePrototype' class 
+/// A 'ConcretePrototype' class 具体原型 用于实现克隆操作 
 /// </summary>
 class ConcretePrototype1 : Prototype
 {
@@ -56,7 +57,7 @@ class ConcretePrototype1 : Prototype
     {
     }
 
-    // Returns a shallow copy
+    // Returns a shallow copy // 浅克隆
     public override Prototype Clone()
     {
         return (Prototype)this.MemberwiseClone();
