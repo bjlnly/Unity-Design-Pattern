@@ -8,7 +8,8 @@ using System.Collections.Generic;
 
 //This real-world code demonstrates the Bridge pattern in which a BusinessObject abstraction is decoupled from the implementation in DataObject.
 //The DataObject implementations can evolve dynamically without changing any clients.
-
+//这段真实的代码演示了桥接模式，在该模式中，BusinessObject抽象与DataObject中的实现分离。
+//数据对象实现可以在不更改任何客户端的情况下动态扩展。
 namespace BridgePatternExample1
 {
 
@@ -17,12 +18,15 @@ namespace BridgePatternExample1
         void Start()
         {
             // Create RefinedAbstraction
+            // 创建精确的抽象类
             Customers customers = new Customers("Chicago");
 
             // Set ConcreteImplementor
+            // 设置具体的实施对象
             customers.Data = new CustomersData();
 
             // Exercise the bridge
+            // 桥来调用类
             customers.Show();
             customers.Next();
             customers.Show();
@@ -35,10 +39,12 @@ namespace BridgePatternExample1
     }
 
     /// <summary>
-    /// The 'Abstraction' class
+    /// The 'Abstraction' class  抽象具体的类
+    /// 只是一个桥 具体要操作哪个实施者的实体 它是不知道的
     /// </summary>
-    class CustomersBase
+    class CustomersBase // 客户基类
     {
+        // 具体抽象数据
         private DataObject _dataObject;
         protected string group;
 
@@ -87,7 +93,7 @@ namespace BridgePatternExample1
     }
 
     /// <summary>
-    /// The 'RefinedAbstraction' class
+    /// The 'RefinedAbstraction' class 精确的抽象类
     /// </summary>
     class Customers : CustomersBase
     {
@@ -107,9 +113,9 @@ namespace BridgePatternExample1
     }
 
     /// <summary>
-    /// The 'Implementor' abstract class
+    /// The 'Implementor' abstract class  实施者的抽象
     /// </summary>
-    abstract class DataObject
+    abstract class DataObject// 数据
     {
         public abstract void NextRecord();
         public abstract void PriorRecord();
@@ -120,7 +126,7 @@ namespace BridgePatternExample1
     }
 
     /// <summary>
-    /// The 'ConcreteImplementor' class
+    /// The 'ConcreteImplementor' class 实施者的具体,对数据做具体操作
     /// </summary>
     class CustomersData : DataObject
     {
