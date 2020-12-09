@@ -11,14 +11,14 @@ The classes and objects participating in this pattern are:
 
 ### Target   (ChemicalCompound)
 * defines the domain-specific interface that Client uses.
-
+<br>*定义客户端使用的域特定接口。
 ### Adapter   (Compound)
 * adapts the interface Adaptee to the Target interface.
-
+<br>*使接口适配者适应目标接口。
 ### Adaptee   (ChemicalDatabank)
 * defines an existing interface that needs adapting.
-
+<br>*定义需要修改的现有接口。
 ### Client   (AdapterApp)
 * collaborates with objects conforming to the Target interface.
-
+<br>*与符合目标接口的对象协作。
 

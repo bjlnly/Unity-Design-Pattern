@@ -8,7 +8,8 @@ using System.Collections;
 
 //Convert the interface of a class into another interface clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.
 //This real-world code demonstrates the use of a legacy chemical databank. Chemical compound objects access the databank through an Adapter interface.
-
+//将一个类的接口转换为客户端期望的另一个接口。适配器允许类协同工作，否则由于接口不兼容而无法协同工作。
+//这段真实的代码演示了遗留化学数据库的使用。化合物对象通过Adapter接口访问数据库。
 namespace AdapterPatternExample1
 {
     public class AdapterPatternExample1 : MonoBehaviour
@@ -32,17 +33,17 @@ namespace AdapterPatternExample1
     }
 
     /// <summary>
-    /// The 'Target' class
+    /// The 'Target' class 目标类  复合物
     /// </summary>
     class Compound
     {
-        protected string _chemical;
-        protected float _boilingPoint;
-        protected float _meltingPoint;
-        protected double _molecularWeight;
-        protected string _molecularFormula;
+        protected string _chemical;// 化学品
+        protected float _boilingPoint;// 沸点
+        protected float _meltingPoint;// 熔点
+        protected double _molecularWeight; //分子量
+        protected string _molecularFormula;// 分子式
 
-        // Constructor
+        // Constructor //构造函数
         public Compound(string chemical)
         {
             this._chemical = chemical;
@@ -55,7 +56,7 @@ namespace AdapterPatternExample1
     }
 
     /// <summary>
-    /// The 'Adapter' class
+    /// The 'Adapter' class 适配器类 富化合物
     /// </summary>
     class RichCompound : Compound
     {
@@ -86,14 +87,15 @@ namespace AdapterPatternExample1
     }
 
     /// <summary>
-    /// The 'Adaptee' class
+    /// The 'Adaptee' class 需要新增的适配品  化学数据银行....
     /// </summary>
     class ChemicalDatabank
     {
         // The databank 'legacy API'
+        // 旧的API  获取临界点
         public float GetCriticalPoint(string compound, string point)
         {
-            // Melting Point
+            // Melting Point 熔点
             if (point == "M")
             {
                 switch (compound.ToLower())
@@ -104,7 +106,7 @@ namespace AdapterPatternExample1
                     default: return 0f;
                 }
             }
-            // Boiling Point
+            // Boiling Point 沸点 
             else
             {
                 switch (compound.ToLower())
@@ -117,6 +119,7 @@ namespace AdapterPatternExample1
             }
         }
 
+        // 获取分子结构
         public string GetMolecularStructure(string compound)
         {
             switch (compound.ToLower())
@@ -128,6 +131,8 @@ namespace AdapterPatternExample1
             }
         }
 
+        
+        // 获取分子量
         public double GetMolecularWeight(string compound)
         {
             switch (compound.ToLower())
