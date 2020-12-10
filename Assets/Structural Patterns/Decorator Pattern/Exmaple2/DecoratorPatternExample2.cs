@@ -12,6 +12,8 @@ namespace DecoratorPatternExample2
         void Start()
         {
             // Make Pizzas:
+            // 制作匹萨
+            // 多重装饰之后 返回的还是匹萨基类
             IPizza basicPizza = new TomatoSauce(new Mozzarella(new PlainPizza()));
             Debug.Log("Ingredients of Pizza: " + basicPizza.GetDescription());
             Debug.Log("Total Cost: " + basicPizza.GetCost());
@@ -19,14 +21,20 @@ namespace DecoratorPatternExample2
     }
 
 
-
+/// <summary>
+/// 匹萨接口
+/// </summary>
     public interface IPizza
     {
+        // 两个基础属性  -- 描述,价格
         string GetDescription();
         double GetCost();
     }
 
 
+/// <summary>
+/// 最简单的匹萨  具体被装饰的类
+/// </summary>
     public class PlainPizza : IPizza
     {
         public string GetDescription()
@@ -41,9 +49,12 @@ namespace DecoratorPatternExample2
     }
 
 
-
+/// <summary>
+/// 装饰基类  继承自匹萨基类
+/// </summary>
     public abstract class ToppingDecorator : IPizza
     {
+        // 有匹萨基类属性的基础上 实现基类的接口
         protected IPizza tempPizza;
 
         public ToppingDecorator(IPizza newPizza)
@@ -65,6 +76,9 @@ namespace DecoratorPatternExample2
 
 
 
+/// <summary>
+/// 具体的装饰 -- 奶酪
+/// </summary>
     public class Mozzarella : ToppingDecorator
     {
         public Mozzarella(IPizza newPizza) : base(newPizza)
@@ -84,7 +98,9 @@ namespace DecoratorPatternExample2
         }
     }
 
-
+/// <summary>
+/// 具体的装饰 -- 西红柿
+/// </summary>
     public class TomatoSauce : ToppingDecorator
     {
         public TomatoSauce(IPizza newPizza) : base(newPizza)
@@ -119,6 +135,9 @@ namespace DecoratorPatternExample2
         // this way would force to create an infinite amount of subclasses for each type of pizza
         // and if cost if calculated off of individual topings you would have to change cost for all pizzas
         // if cost for one topping chages
+        
+        // 这种方式将迫使为每种类型的比萨饼创建无限量的子类。
+        // 如果成本是按单个比萨饼计算的，你就必须改变所有比萨饼的成本。
         public class ThreeCheesePizza : Pizza
         {
             public override void SetDescription(string newDescription)

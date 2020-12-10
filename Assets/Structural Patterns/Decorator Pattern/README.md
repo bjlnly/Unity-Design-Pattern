@@ -1,3 +1,4 @@
+
 # Decorator Pattern 装饰模式
 ## Definition
 
@@ -13,13 +14,16 @@ The classes and objects participating in this pattern are:
 
 ### Component   (LibraryItem)
 * defines the interface for objects that can have responsibilities added to them dynamically.
+* 定义了可以动态添加职责的对象的接口。
 
 ### ConcreteComponent   (Book, Video)
 * defines an object to which additional responsibilities can be attached.
+* 定义了一个可以附加职责的对象。
 
 ### Decorator   (Decorator)
 * maintains a reference to a Component object and defines an interface that conforms to Component's interface.
+* 维护一个对Component对象的引用，并定义一个符合Component接口的接口。
 
 ### ConcreteDecorator   (Borrowable)
 * adds responsibilities to the component.
-
+* 为组件添加职责
