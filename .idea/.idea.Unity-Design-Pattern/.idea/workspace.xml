@@ -19,12 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d8c5e3b-b84c-4ae8-9209-9abb1b4fc342" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Design-Pattern/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Design-Pattern/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Structural Patterns/Bridge Pattern/Exmaple1/BridgePatternExample1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Structural Patterns/Bridge Pattern/Exmaple1/BridgePatternExample1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Structural Patterns/Bridge Pattern/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Structural Patterns/Bridge Pattern/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Structural Patterns/Bridge Pattern/Structure/BridgeStructure.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Structural Patterns/Bridge Pattern/Structure/BridgeStructure.cs" afterDir="false" />
-    </list>
+    <list default="true" id="7d8c5e3b-b84c-4ae8-9209-9abb1b4fc342" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,6 +58,7 @@
         <option value="$PROJECT_DIR$/Assets/Structural Patterns/Bridge Pattern/README.md" />
         <option value="$PROJECT_DIR$/Assets/Structural Patterns/Bridge Pattern/Structure/BridgeStructure.cs" />
         <option value="$PROJECT_DIR$/Assets/Structural Patterns/Bridge Pattern/Exmaple1/BridgePatternExample1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Structural Patterns/Bridge Pattern/Exmaple2/BridgePatternExample2.cs" />
       </list>
     </option>
   </component>
