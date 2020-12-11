@@ -4,20 +4,24 @@
 
 using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// 有各种复杂的子系统  客户直接操作子系统不合适  需要跟外观沟通  -- 有点外交官的意思
+/// </summary>
 public class FacadeStructure : MonoBehaviour
 {
 	void Start ( )
     {
+        // 创建一个接待 -- 外观类
         Facade facade = new Facade();
 
+        // 执行接待工作 A. B
         facade.MethodA();
         facade.MethodB();
     }
 }
 
 /// <summary>
-/// The 'Subsystem ClassA' class
+/// The 'Subsystem ClassA' class 子系统类A
 /// </summary>
 class SubSystemOne
 {
@@ -28,7 +32,7 @@ class SubSystemOne
 }
 
 /// <summary>
-/// The 'Subsystem ClassB' class
+/// The 'Subsystem ClassB' class 子系统类B
 /// </summary>
 class SubSystemTwo
 {
@@ -39,7 +43,7 @@ class SubSystemTwo
 }
 
 /// <summary>
-/// The 'Subsystem ClassC' class
+/// The 'Subsystem ClassC' class 子系统C
 /// </summary>
 class SubSystemThree
 {
@@ -50,7 +54,7 @@ class SubSystemThree
 }
 
 /// <summary>
-/// The 'Subsystem ClassD' class
+/// The 'Subsystem ClassD' class 子系统D
 /// </summary>
 class SubSystemFour
 {
@@ -61,10 +65,12 @@ class SubSystemFour
 }
 
 /// <summary>
-/// The 'Facade' class
+/// The 'Facade' class 外观类  接待类 
 /// </summary>
 class Facade
 {
+    // 接待类熟悉所有子系统
+    // 同时整合各个子系统的工作  提供给客户端
     private SubSystemOne _one;
     private SubSystemTwo _two;
     private SubSystemThree _three;

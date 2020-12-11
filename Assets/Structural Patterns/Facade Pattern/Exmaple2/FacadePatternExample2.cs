@@ -11,19 +11,26 @@ namespace FacadePatternExample2
     {
         void Start()
         {
+            // 账号密码登录银行
             BankAccountFacade bankAccount = new BankAccountFacade(12345678, 1234);
 
+            // 取款
             Debug.Log("\"I want to withdraw $50 dollars!\"");
             bankAccount.WithdrawCash(50.00);
 
+            // 取款
             Debug.Log("\"Mh ok now let me withdraw $5000 dollars!?\"");
             bankAccount.WithdrawCash(5000.00);
 
+            //存款
             Debug.Log("\"What tf... maybe save some cash, here are $300 bucks ;-)\"");
             bankAccount.DepositCash(300.00);
         }
     }
 
+    /// <summary>
+    /// 账号启动类 -- 子系统
+    /// </summary>
     public class WelcomeToBank
     {
         public WelcomeToBank()
@@ -33,6 +40,9 @@ namespace FacadePatternExample2
         }
     }
 
+    /// <summary>
+    /// 账号核对类 -- 子系统
+    /// </summary>
     public class AccountNumberCheck
     {
         private int accountNumber = 12345678;
@@ -51,6 +61,9 @@ namespace FacadePatternExample2
         }
     }
 
+    /// <summary>
+    /// 安全码检测类 -- 子系统 
+    /// </summary>
     public class SecurityCodeCheck
     {
         private int securityCode = 1234;
@@ -69,6 +82,9 @@ namespace FacadePatternExample2
         }
     }
 
+    /// <summary>
+    /// 支票检测 -- 子系统
+    /// </summary>
     public class FundsCheck
     {
         private double cashInAccount = 1000.00;
@@ -101,12 +117,14 @@ namespace FacadePatternExample2
             }
         }
 
+        // 存款
         public void MakeDeposit(double cash)
         {
             IncreaseCashInAccount(cash);
             Debug.Log("Deposit complete. Current Balance is: " + GetCashInAccount());
         }
 
+        // 取款
         public void WithdrawMoney(double cash)
         {
             DecreaseCashInAccount(cash);
@@ -114,6 +132,10 @@ namespace FacadePatternExample2
         }
     }
 
+    /// <summary>
+    /// 银行账户外观
+    /// 存取款之前,要校验客户的账号和安全码 
+    /// </summary>
     public class BankAccountFacade
     {
         private int accountNumber;

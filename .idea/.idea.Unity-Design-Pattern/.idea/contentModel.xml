@@ -352,6 +352,9 @@
               <e p="FacadeStructure.cs" t="Include" />
             </e>
           </e>
+          <e p="Filter Pattern" t="Include">
+            <e p="FilterPatternExample.cs" t="Include" />
+          </e>
           <e p="Flyweight Pattern" t="Include">
             <e p="Exmaple1" t="Include">
               <e p="FlyweightPatternExample1.cs" t="Include" />
