@@ -35,9 +35,11 @@ public class FlyweightStructure : MonoBehaviour
         // Arbitrary extrinsic state(外部状态)
         int externalState = 22;
 
+        // 享元工厂
         FlyweightFactory factory = new FlyweightFactory();
 
         // Work with different flyweight instances
+        // 创建不同的元实例 -- 抽象的元
         Flyweight fx = factory.GetFlyweight("X");
         fx.Operation(--externalState);
 
@@ -47,6 +49,7 @@ public class FlyweightStructure : MonoBehaviour
         Flyweight fz = factory.GetFlyweight("Z");
         fz.Operation(--externalState);
 
+        // 创建不可共享的元
         UnsharedConcreteFlyweight fu = new
           UnsharedConcreteFlyweight();
 
@@ -56,7 +59,7 @@ public class FlyweightStructure : MonoBehaviour
 }
 
 /// <summary>
-/// The 'FlyweightFactory' class
+/// The 'FlyweightFactory' class 享元工厂 
 /// </summary>
 class FlyweightFactory
 {
@@ -77,15 +80,16 @@ class FlyweightFactory
 }
 
 /// <summary>
-/// The 'Flyweight' abstract class
+/// The 'Flyweight' abstract class 抽象的元
 /// </summary>
 abstract class Flyweight
 {
+    // 抽象的操作
     public abstract void Operation(int externalState);
 }
 
 /// <summary>
-/// The 'ConcreteFlyweight' class
+/// The 'ConcreteFlyweight' class 具体的元
 /// </summary>
 class ConcreteFlyweight : Flyweight
 {
@@ -96,7 +100,7 @@ class ConcreteFlyweight : Flyweight
 }
 
 /// <summary>
-/// The 'UnsharedConcreteFlyweight' class
+/// The 'UnsharedConcreteFlyweight' class 非共享的具体元
 /// </summary>
 class UnsharedConcreteFlyweight : Flyweight
 {
