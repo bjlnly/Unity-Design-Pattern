@@ -58,7 +58,7 @@ abstract class Implementor
 }
 
 /// <summary>
-/// The 'RefinedAbstraction' class 具体的抽象角色
+/// The 'RefinedAbstraction' class 具体的抽象角色  精确的抽象类
 /// </summary>
 class RefinedAbstraction : Abstraction
 {
