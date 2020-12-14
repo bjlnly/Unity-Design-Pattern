@@ -14,12 +14,18 @@ The classes and objects participating in this pattern are:
 ### Handler   (Approver)
 * defines an interface for handling the requests
 * (optional) implements the successor link
+* 定义了一个处理请求的接口
+* (可选)实现后继联系。
 
 ### ConcreteHandler   (Director, VicePresident, President)
 * handles requests it is responsible for
 * can access its successor
 * if the ConcreteHandler can handle the request, it does so; otherwise it forwards the request to its successor
+* 处理其负责的请求
+* 可以访问其后续机构
+* 如果ConcreteHandler能够处理请求，它就处理；否则，它就把请求转发给它的后继者。
 
 ### Client   (ChainApp)
 * initiates the request to a ConcreteHandler object on the chain
+* 启动对链上ConcreteHandler对象的请求。
 

@@ -20,9 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d8c5e3b-b84c-4ae8-9209-9abb1b4fc342" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Structural Patterns/Flyweight Pattern/Exmaple1/FlyweightPatternExample1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Structural Patterns/Flyweight Pattern/Exmaple1/FlyweightPatternExample1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Structural Patterns/Flyweight Pattern/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Structural Patterns/Flyweight Pattern/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Structural Patterns/Flyweight Pattern/Structure/FlyweightStructure.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Structural Patterns/Flyweight Pattern/Structure/FlyweightStructure.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Design-Pattern/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Design-Pattern/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Design-Pattern/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Design-Pattern/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Chain of Responsibility Pattern/Example1/ChainOfResponsibilityExample1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Chain of Responsibility Pattern/Example1/ChainOfResponsibilityExample1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Chain of Responsibility Pattern/Example2/ChainOfResponsibilityExample2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Chain of Responsibility Pattern/Example2/ChainOfResponsibilityExample2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Chain of Responsibility Pattern/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Chain of Responsibility Pattern/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Chain of Responsibility Pattern/Structure/ChainOfResponsibilityStructure.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Chain of Responsibility Pattern/Structure/ChainOfResponsibilityStructure.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +83,10 @@
         <option value="$PROJECT_DIR$/Assets/Structural Patterns/Flyweight Pattern/README.md" />
         <option value="$PROJECT_DIR$/Assets/Structural Patterns/Flyweight Pattern/Structure/FlyweightStructure.cs" />
         <option value="$PROJECT_DIR$/Assets/Structural Patterns/Flyweight Pattern/Exmaple1/FlyweightPatternExample1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Chain of Responsibility Pattern/README.md" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Chain of Responsibility Pattern/Example1/ChainOfResponsibilityExample1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Chain of Responsibility Pattern/Structure/ChainOfResponsibilityStructure.cs" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Chain of Responsibility Pattern/Example2/ChainOfResponsibilityExample2.cs" />
       </list>
     </option>
   </component>
@@ -138,6 +145,7 @@
       <workItem from="1606727296837" duration="19361000" />
       <workItem from="1606992273106" duration="595000" />
       <workItem from="1607043924629" duration="20160000" />
+      <workItem from="1607927901314" duration="2341000" />
     </task>
     <servers />
   </component>
@@ -182,9 +190,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606985231959" />
-    <state x="806" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1607669045130">
+    <state x="806" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1607930344605">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="806" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607669045130" />
+    <state x="806" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607930344605" />
   </component>
 </project>
