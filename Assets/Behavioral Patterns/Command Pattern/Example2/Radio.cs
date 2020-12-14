@@ -5,6 +5,7 @@
 using UnityEngine;
 using System.Collections;
 
+// 接收者 -- 收音机
 public class Radio : IElectronicDevice
 {
     protected int volume = 0;

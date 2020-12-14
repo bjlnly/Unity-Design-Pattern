@@ -6,6 +6,9 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
+/// <summary>
+/// 具体命令--所有设备全部关闭
+/// </summary>
 public class TurnItAllOff : ICommand
 {
     List<IElectronicDevice> devices;

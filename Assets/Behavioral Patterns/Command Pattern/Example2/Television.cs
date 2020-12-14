@@ -5,6 +5,9 @@
 using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// 接收者 -- 电视机
+/// </summary>
 public class Television : IElectronicDevice
 {
     protected int volume = 0;

@@ -8,15 +8,20 @@ using System.Collections.Generic;
 
 namespace CommandPatternExample4
 {
+    /// <summary>
+    /// 基础demo 命令执行者,命令,命令管理者3个对象
+    /// </summary>
     public class CommandPatternExample4 : MonoBehaviour
     {
         void Start()
         {
+            // 命令管理者
             Invoker theInvoker = new Invoker();
 
             Command theCommand = null;
             // 结合命令与执行者
             theCommand = new ConcreteCommand1(new Receiver1(), "hi");
+            // 命令和请求者绑定
             theInvoker.AddCommand(theCommand);
             theCommand = new ConcreteCommand2(new Receiver2(), 666);
             theInvoker.AddCommand(theCommand);
@@ -102,7 +107,7 @@ namespace CommandPatternExample4
 
 
     /// <summary>
-    /// 命令管理者
+    /// 命令管理者 -- 请求者
     /// </summary>
     public class Invoker
     {

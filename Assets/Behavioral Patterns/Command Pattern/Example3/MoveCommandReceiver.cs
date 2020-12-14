@@ -4,6 +4,9 @@
 
 using UnityEngine;
 
+/// <summary>
+/// 移动命令接收者 -- 执行具体操作
+/// </summary>
     class MoveCommandReceiver
     {
         public void MoveOperation(GameObject gameObjectToMove, MoveDirection direction, float distance)

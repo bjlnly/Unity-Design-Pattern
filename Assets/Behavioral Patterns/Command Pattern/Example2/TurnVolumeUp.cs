@@ -5,6 +5,9 @@
 using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// 具体命令--调高音量
+/// </summary>
 public class TurnVolumeUp : ICommand
 {
     IElectronicDevice device;

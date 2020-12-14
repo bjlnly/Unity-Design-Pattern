@@ -4,7 +4,9 @@
 
 using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// 具体命令--关闭设备
+/// </summary>
 public class TurnTVOff : ICommand
 {
     IElectronicDevice device;

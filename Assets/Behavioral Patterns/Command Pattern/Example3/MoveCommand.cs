@@ -8,10 +8,13 @@ using UnityEngine;
     // A basic enum to describe our movement
     public enum MoveDirection { up, down, left, right };
 
+    /// <summary>
+    /// 具体命令 -- 移动命令
+    /// </summary>
     class MoveCommand : Command
     {
         private MoveDirection _direction;
-        private MoveCommandReceiver _receiver;
+        private MoveCommandReceiver _receiver; // 命令接收者
         private float _distance;
         private GameObject _gameObject;
 
@@ -26,14 +29,14 @@ using UnityEngine;
         }
 
 
-        //Execute new command
+        //Execute new command 执行命令
         public void Execute()
         {
             _receiver.MoveOperation(_gameObject, _direction, _distance);
         }
 
 
-        //Undo last command
+        //Undo last command 撤销命令
         public void UnExecute()
         {
             _receiver.MoveOperation(_gameObject, InverseDirection(_direction), _distance);
@@ -41,6 +44,7 @@ using UnityEngine;
 
 
         //invert the direction for undo
+        // 翻转方向 -- 为了撤销
         private MoveDirection InverseDirection(MoveDirection direction)
         {
             switch (direction)
@@ -61,6 +65,7 @@ using UnityEngine;
 
 
         //So we can show this command in debug output easily
+        // debug命令
         public override string ToString()
         {
             return _gameObject.name + " : " + MoveDirectionString(_direction) + " : " + _distance.ToString();
@@ -68,6 +73,7 @@ using UnityEngine;
 
 
         //Convert the MoveDirection enum to a string for debug
+        //将MoveDirection枚举转换为一个字符串，以便调试。
         public string MoveDirectionString(MoveDirection direction)
         {
             switch (direction)

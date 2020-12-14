@@ -20,12 +20,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d8c5e3b-b84c-4ae8-9209-9abb1b4fc342" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Design-Pattern/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Design-Pattern/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Design-Pattern/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Design-Pattern/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Chain of Responsibility Pattern/Example1/ChainOfResponsibilityExample1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Chain of Responsibility Pattern/Example1/ChainOfResponsibilityExample1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Chain of Responsibility Pattern/Example2/ChainOfResponsibilityExample2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Chain of Responsibility Pattern/Example2/ChainOfResponsibilityExample2.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Chain of Responsibility Pattern/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Chain of Responsibility Pattern/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Chain of Responsibility Pattern/Structure/ChainOfResponsibilityStructure.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Chain of Responsibility Pattern/Structure/ChainOfResponsibilityStructure.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example1/CommandExample1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example1/CommandExample1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/DeviceButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/DeviceButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/ICommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/ICommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/IElectronicDevice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/IElectronicDevice.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/Radio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/Radio.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TVRemove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TVRemove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/Television.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/Television.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TestCommandPattern.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TestCommandPattern.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TurnItAllOff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TurnItAllOff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TurnTVOff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TurnTVOff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TurnTVOn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TurnTVOn.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TurnVolumeDown.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TurnVolumeDown.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TurnVolumeUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TurnVolumeUp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example3/Command.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example3/Command.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example3/InputHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example3/InputHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example3/MoveCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example3/MoveCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example3/MoveCommandReceiver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example3/MoveCommandReceiver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example4/CommandPatternExample4.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example4/CommandPatternExample4.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Structure/CommandStructure.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Structure/CommandStructure.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,18 +59,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Creational Patterns/Singleton Pattern/README.md" />
-        <option value="$PROJECT_DIR$/Assets/Creational Patterns/Singleton Pattern/Example1/SingletonPatternExample1.cs" />
-        <option value="$PROJECT_DIR$/Assets/Creational Patterns/Prototype Pattern/README.md" />
-        <option value="$PROJECT_DIR$/Assets/Creational Patterns/Prototype Pattern/Example1/PrototypePatternExample1.cs" />
-        <option value="$PROJECT_DIR$/Assets/Creational Patterns/Factory Method Pattern/Example1/FactoryMethodPatternExample1.cs" />
-        <option value="$PROJECT_DIR$/Assets/Creational Patterns/Abstract Factory Pattern/Example1/AbstractFactoryPatternExample1.cs" />
-        <option value="$PROJECT_DIR$/Assets/Creational Patterns/Abstract Factory Pattern/Example2/AbstractFactoryPatternExample2.cs" />
-        <option value="$PROJECT_DIR$/Assets/Creational Patterns/Factory Method Pattern/Structure/FactoryMethodStructure.cs" />
-        <option value="$PROJECT_DIR$/Assets/Creational Patterns/Abstract Factory Pattern/Structure/AbstractFactoryStructrue.cs" />
-        <option value="$PROJECT_DIR$/Assets/Creational Patterns/Singleton Pattern/Structure/SingletonStructure.cs" />
-        <option value="$PROJECT_DIR$/Assets/Creational Patterns/Builder Pattern/README.md" />
-        <option value="$PROJECT_DIR$/Assets/Creational Patterns/Builder Pattern/Example1/BuilderPatternExample1.cs" />
         <option value="$PROJECT_DIR$/Assets/Creational Patterns/Builder Pattern/Example2/BuilderPatternExample2.cs" />
         <option value="$PROJECT_DIR$/Assets/Creational Patterns/Builder Pattern/Structure/BuilderStructure.cs" />
         <option value="$PROJECT_DIR$/Assets/Structural Patterns/Adapter Pattern/README.md" />
@@ -87,6 +90,26 @@
         <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Chain of Responsibility Pattern/Example1/ChainOfResponsibilityExample1.cs" />
         <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Chain of Responsibility Pattern/Structure/ChainOfResponsibilityStructure.cs" />
         <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Chain of Responsibility Pattern/Example2/ChainOfResponsibilityExample2.cs" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/README.md" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Structure/CommandStructure.cs" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/DeviceButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/IElectronicDevice.cs" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/ICommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/Radio.cs" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/Television.cs" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TurnVolumeDown.cs" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TurnVolumeUp.cs" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TurnTVOn.cs" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TurnItAllOff.cs" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TurnTVOff.cs" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TVRemove.cs" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example3/Command.cs" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example3/MoveCommand.cs" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example3/MoveCommandReceiver.cs" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example3/InputHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TestCommandPattern.cs" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example1/CommandExample1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example4/CommandPatternExample4.cs" />
       </list>
     </option>
   </component>
@@ -145,7 +168,7 @@
       <workItem from="1606727296837" duration="19361000" />
       <workItem from="1606992273106" duration="595000" />
       <workItem from="1607043924629" duration="20160000" />
-      <workItem from="1607927901314" duration="2341000" />
+      <workItem from="1607927901314" duration="5728000" />
     </task>
     <servers />
   </component>
@@ -190,9 +213,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606985231959" />
-    <state x="806" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1607930344605">
+    <state x="806" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1607934905602">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="806" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607930344605" />
+    <state x="806" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607934905602" />
   </component>
 </project>
