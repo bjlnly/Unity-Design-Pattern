@@ -13,14 +13,18 @@ The classes and objects participating in this pattern are:
 
 ### Iterator  (AbstractIterator)
 * defines an interface for accessing and traversing elements.
+* 定义了一个访问和遍历元素的接口。
 
 ### ConcreteIterator  (Iterator)
 * implements the Iterator interface.
 * keeps track of the current position in the traversal of the aggregate.
+* 实现Iterator接口。
+* 跟踪当前在集合体遍历中的位置。
 
 ### Aggregate  (AbstractCollection)
 * defines an interface for creating an Iterator object
+* 定义了一个创建迭代器对象的接口。
 
 ### ConcreteAggregate  (Collection)
 * implements the Iterator creation interface to return an instance of the proper ConcreteIterator
-
+* 实现Iterator创建接口，以返回一个适当的ConcreteIterator实例。

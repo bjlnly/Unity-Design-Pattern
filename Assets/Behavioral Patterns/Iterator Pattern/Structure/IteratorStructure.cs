@@ -9,6 +9,7 @@ public class IteratorStructure : MonoBehaviour
 {
 	void Start ( )
 	{
+        // 创建具体的聚合
         ConcreteAggregate a = new ConcreteAggregate();
         a[0] = "Item A";
         a[1] = "Item B";
@@ -16,6 +17,7 @@ public class IteratorStructure : MonoBehaviour
         a[3] = "Item D";
 
         // Create Iterator and provide aggregate
+        // 通过聚合来创建遍历
         Iterator i = a.CreateIterator();
 
         Debug.Log("Iterating over collection:");
@@ -30,15 +32,16 @@ public class IteratorStructure : MonoBehaviour
 }
 
     /// <summary>
-    /// The 'Aggregate' abstract class
+    /// The 'Aggregate' abstract class 抽象的聚合类
     /// </summary>
     abstract class Aggregate
     {
+        // 创建遍历器的接口
         public abstract Iterator CreateIterator();
     }
 
     /// <summary>
-    /// The 'ConcreteAggregate' class
+    /// The 'ConcreteAggregate' class 具体的聚合类
     /// </summary>
     class ConcreteAggregate : Aggregate
     {
@@ -56,6 +59,7 @@ public class IteratorStructure : MonoBehaviour
         }
 
         // Indexer
+        // 返回适当的遍历内容
         public object this[int index]
         {
             get { return _items[index]; }
@@ -64,21 +68,26 @@ public class IteratorStructure : MonoBehaviour
     }
 
     /// <summary>
-    /// The 'Iterator' abstract class
+    /// The 'Iterator' abstract class 抽象的遍历类
     /// </summary>
     abstract class Iterator
     {
+        // 第一
         public abstract object First();
+        // 下一个
         public abstract object Next();
+        // 是否完结
         public abstract bool IsDone();
+        // 当前序号
         public abstract object CurrentItem();
     }
 
     /// <summary>
-    /// The 'ConcreteIterator' class
+    /// The 'ConcreteIterator' class 具体遍历类
     /// </summary>
     class ConcreteIterator : Iterator
     {
+        // 具体的聚合
         private ConcreteAggregate _aggregate;
         private int _current = 0;
 

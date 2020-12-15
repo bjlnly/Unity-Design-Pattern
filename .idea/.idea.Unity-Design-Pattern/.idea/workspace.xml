@@ -21,10 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="7d8c5e3b-b84c-4ae8-9209-9abb1b4fc342" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Design-Pattern/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Design-Pattern/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Interpreter Pattern/Example1/InterpreterExample1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Interpreter Pattern/Example1/InterpreterExample1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Interpreter Pattern/Example2/InterpreterExample2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Interpreter Pattern/Example2/InterpreterExample2.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Interpreter Pattern/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Interpreter Pattern/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Interpreter Pattern/Structure/InterpreterStructrue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Interpreter Pattern/Structure/InterpreterStructrue.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Iterator Pattern/Example1/IteratorExample1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Iterator Pattern/Example1/IteratorExample1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Iterator Pattern/Example2/IteratorExample2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Iterator Pattern/Example2/IteratorExample2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Iterator Pattern/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Iterator Pattern/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Iterator Pattern/Structure/IteratorStructure.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Iterator Pattern/Structure/IteratorStructure.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,10 +45,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Structural Patterns/Adapter Pattern/Exmaple1/AdapterPatternExample1.cs" />
-        <option value="$PROJECT_DIR$/Assets/Structural Patterns/Adapter Pattern/Exmaple2/AdapterPatternExample2.cs" />
-        <option value="$PROJECT_DIR$/Assets/Structural Patterns/Bridge Pattern/README.md" />
-        <option value="$PROJECT_DIR$/Assets/Structural Patterns/Bridge Pattern/Structure/BridgeStructure.cs" />
         <option value="$PROJECT_DIR$/Assets/Structural Patterns/Bridge Pattern/Exmaple1/BridgePatternExample1.cs" />
         <option value="$PROJECT_DIR$/Assets/Structural Patterns/Bridge Pattern/Exmaple2/BridgePatternExample2.cs" />
         <option value="$PROJECT_DIR$/Assets/Structural Patterns/Filter Pattern/FilterPatternExample.cs" />
@@ -96,6 +92,10 @@
         <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Interpreter Pattern/Structure/InterpreterStructrue.cs" />
         <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Interpreter Pattern/Example1/InterpreterExample1.cs" />
         <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Interpreter Pattern/Example2/InterpreterExample2.cs" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Iterator Pattern/README.md" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Iterator Pattern/Structure/IteratorStructure.cs" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Iterator Pattern/Example1/IteratorExample1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Iterator Pattern/Example2/IteratorExample2.cs" />
       </list>
     </option>
   </component>
@@ -154,7 +154,7 @@
       <workItem from="1606727296837" duration="19361000" />
       <workItem from="1606992273106" duration="595000" />
       <workItem from="1607043924629" duration="20160000" />
-      <workItem from="1607927901314" duration="12225000" />
+      <workItem from="1607927901314" duration="16126000" />
     </task>
     <servers />
   </component>

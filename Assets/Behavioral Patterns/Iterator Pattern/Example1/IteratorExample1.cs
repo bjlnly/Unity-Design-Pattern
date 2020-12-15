@@ -6,7 +6,8 @@ using UnityEngine;
 using System.Collections;
 
 //This real-world code demonstrates the Iterator pattern which is used to iterate over a collection of items and skip a specific number of items each iteration.
-
+//这段真实世界的代码演示了Iterator模式，
+//它用于在一个项目集合上进行迭代，并在每次迭代中跳过特定数量的项目。
 namespace IteratorExample1
 {
     public class IteratorExample1 : MonoBehaviour
@@ -14,6 +15,7 @@ namespace IteratorExample1
         void Start()
         {
             // Build a collection
+            // 构建一个集合
             Collection collection = new Collection();
             collection[0] = new Item("Item 0");
             collection[1] = new Item("Item 1");
@@ -25,10 +27,12 @@ namespace IteratorExample1
             collection[7] = new Item("Item 7");
             collection[8] = new Item("Item 8");
 
-            // Create iterator
+            // Create iterator 
+            // 通过集合创建遍历器
             Iterator iterator = collection.CreateIterator();
 
             // Skip every other item
+            // 设置单次迭代的跨度
             iterator.Step = 2;
 
             Debug.Log("Iterating collection:");
@@ -42,7 +46,7 @@ namespace IteratorExample1
     }
 
     /// <summary>
-    /// A collection item
+    /// A collection item 一个集合的单个项目
     /// </summary>
     class Item
     {
@@ -62,20 +66,23 @@ namespace IteratorExample1
     }
 
     /// <summary>
-    /// The 'Aggregate' interface
+    /// The 'Aggregate' interface 集合接口
     /// </summary>
     interface IAbstractCollection
     {
+        // 创建迭代器
         Iterator CreateIterator();
     }
 
     /// <summary>
-    /// The 'ConcreteAggregate' class
+    /// The 'ConcreteAggregate' class 具体的集合
     /// </summary>
     class Collection : IAbstractCollection
     {
+        // 具体的数据
         private ArrayList _items = new ArrayList();
 
+        // 通过集合创建迭代器
         public Iterator CreateIterator()
         {
             return new Iterator(this);
@@ -96,7 +103,7 @@ namespace IteratorExample1
     }
 
     /// <summary>
-    /// The 'Iterator' interface
+    /// The 'Iterator' interface 抽象的迭代器接口
     /// </summary>
     interface IAbstractIterator
     {
@@ -107,13 +114,14 @@ namespace IteratorExample1
     }
 
     /// <summary>
-    /// The 'ConcreteIterator' class
+    /// The 'ConcreteIterator' class 具体的迭代器
     /// </summary>
     class Iterator : IAbstractIterator
     {
+        // 内聚具体集合
         private Collection _collection;
-        private int _current = 0;
-        private int _step = 1;
+        private int _current = 0; // 提供序号
+        private int _step = 1; // 提供单次迭代数量
 
         // Constructor
         public Iterator(Collection collection)
