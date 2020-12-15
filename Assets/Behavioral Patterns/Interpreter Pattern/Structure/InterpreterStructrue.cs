@@ -9,18 +9,22 @@ public class InterpreterStructrue : MonoBehaviour
 {
 	void Start ( )
     {
+        // 先定义一段上下文
         Context context = new Context();
 
         // Usually a tree 
+        // 构建一段语法树
         ArrayList list = new ArrayList();
 
-        // Populate 'abstract syntax tree' 
+        // Populate 'abstract syntax tree'
+        // 填充抽象语法树
         list.Add(new TerminalExpression());
         list.Add(new NonterminalExpression());
         list.Add(new TerminalExpression());
         list.Add(new TerminalExpression());
 
         // Interpret
+        // 通过语法树解释上下文的内容
         foreach (AbstractExpression exp in list)
         {
             exp.Interpret(context);
@@ -30,14 +34,14 @@ public class InterpreterStructrue : MonoBehaviour
 }
 
 /// <summary>
-/// The 'Context' class
+/// The 'Context' class 上下文类
 /// </summary>
 class Context
 {
 }
 
 /// <summary>
-/// The 'AbstractExpression' abstract class
+/// The 'AbstractExpression' abstract class 抽象的解释器类
 /// </summary>
 abstract class AbstractExpression
 {
@@ -45,7 +49,7 @@ abstract class AbstractExpression
 }
 
 /// <summary>
-/// The 'TerminalExpression' class
+/// The 'TerminalExpression' class 终端解释器
 /// </summary>
 class TerminalExpression : AbstractExpression
 {
@@ -56,7 +60,7 @@ class TerminalExpression : AbstractExpression
 }
 
 /// <summary>
-/// The 'NonterminalExpression' class
+/// The 'NonterminalExpression' class 非终端解释器
 /// </summary>
 class NonterminalExpression : AbstractExpression
 {

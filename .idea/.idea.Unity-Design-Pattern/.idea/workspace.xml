@@ -21,26 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="7d8c5e3b-b84c-4ae8-9209-9abb1b4fc342" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Design-Pattern/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Design-Pattern/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example1/CommandExample1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example1/CommandExample1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/DeviceButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/DeviceButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/ICommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/ICommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/IElectronicDevice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/IElectronicDevice.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/Radio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/Radio.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TVRemove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TVRemove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/Television.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/Television.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TestCommandPattern.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TestCommandPattern.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TurnItAllOff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TurnItAllOff.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TurnTVOff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TurnTVOff.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TurnTVOn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TurnTVOn.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TurnVolumeDown.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TurnVolumeDown.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TurnVolumeUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TurnVolumeUp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example3/Command.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example3/Command.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example3/InputHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example3/InputHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example3/MoveCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example3/MoveCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example3/MoveCommandReceiver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example3/MoveCommandReceiver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example4/CommandPatternExample4.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example4/CommandPatternExample4.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Structure/CommandStructure.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Structure/CommandStructure.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Interpreter Pattern/Example1/InterpreterExample1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Interpreter Pattern/Example1/InterpreterExample1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Interpreter Pattern/Example2/InterpreterExample2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Interpreter Pattern/Example2/InterpreterExample2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Interpreter Pattern/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Interpreter Pattern/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Interpreter Pattern/Structure/InterpreterStructrue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Interpreter Pattern/Structure/InterpreterStructrue.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,17 +36,15 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/63DD8BF9-8CFA-4BA9-85AF-735EF1A56BA9/97/940c20ed/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62FFEEB7-EC02-4BEA-B61E-5FBF8D44AC5B/75/e86382a2/String.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/63DD8BF9-8CFA-4BA9-85AF-735EF1A56BA9/00/c40f5b2e/ICloneable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/62FFEEB7-EC02-4BEA-B61E-5FBF8D44AC5B/c1/a4f40192/TextInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/63DD8BF9-8CFA-4BA9-85AF-735EF1A56BA9/a5/5612b8e1/Random.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../31.babybuschinese.dev2019/Assets/_MiaoxueCharacter/Scripts/ChineseCharacters/WirteWord/WriteWordSystem.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Creational Patterns/Builder Pattern/Example2/BuilderPatternExample2.cs" />
-        <option value="$PROJECT_DIR$/Assets/Creational Patterns/Builder Pattern/Structure/BuilderStructure.cs" />
-        <option value="$PROJECT_DIR$/Assets/Structural Patterns/Adapter Pattern/README.md" />
-        <option value="$PROJECT_DIR$/Assets/Structural Patterns/Adapter Pattern/Structure/AdapterStructure.cs" />
         <option value="$PROJECT_DIR$/Assets/Structural Patterns/Adapter Pattern/Exmaple1/AdapterPatternExample1.cs" />
         <option value="$PROJECT_DIR$/Assets/Structural Patterns/Adapter Pattern/Exmaple2/AdapterPatternExample2.cs" />
         <option value="$PROJECT_DIR$/Assets/Structural Patterns/Bridge Pattern/README.md" />
@@ -110,6 +92,10 @@
         <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TestCommandPattern.cs" />
         <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example1/CommandExample1.cs" />
         <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example4/CommandPatternExample4.cs" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Interpreter Pattern/README.md" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Interpreter Pattern/Structure/InterpreterStructrue.cs" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Interpreter Pattern/Example1/InterpreterExample1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Interpreter Pattern/Example2/InterpreterExample2.cs" />
       </list>
     </option>
   </component>
@@ -168,7 +154,7 @@
       <workItem from="1606727296837" duration="19361000" />
       <workItem from="1606992273106" duration="595000" />
       <workItem from="1607043924629" duration="20160000" />
-      <workItem from="1607927901314" duration="5728000" />
+      <workItem from="1607927901314" duration="12225000" />
     </task>
     <servers />
   </component>

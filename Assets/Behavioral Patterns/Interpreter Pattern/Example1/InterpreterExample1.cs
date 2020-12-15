@@ -7,17 +7,19 @@ using System.Collections;
 using System.Collections.Generic;
 
 //This real-world code demonstrates the Interpreter pattern which is used to convert a Roman numeral to a decimal.
-
+//这段真实的代码演示了用于将罗马数字转换为十进制数的解释器模式。
 namespace InterpreterExample1
 {
     public class InterpreterExample1 : MonoBehaviour
     {
         void Start()
         {
+            // 定义罗马数字的上下文  
             string roman = "MCMXXVIII";
             Context context = new Context(roman);
 
             // Build the 'parse tree'
+            // 构建语法树
             List<Expression> tree = new List<Expression>();
             tree.Add(new ThousandExpression());
             tree.Add(new HundredExpression());
@@ -25,6 +27,7 @@ namespace InterpreterExample1
             tree.Add(new OneExpression());
 
             // Interpret
+            // 解释
             foreach (Expression exp in tree)
             {
                 exp.Interpret(context);
@@ -35,7 +38,7 @@ namespace InterpreterExample1
     }
 
     /// <summary>
-    /// The 'Context' class
+    /// The 'Context' class 被解释的上下文
     /// </summary>
     class Context
     {
@@ -48,14 +51,14 @@ namespace InterpreterExample1
             this._input = input;
         }
 
-        // Gets or sets input
+        // Gets or sets input 输入
         public string Input
         {
             get { return _input; }
             set { _input = value; }
         }
 
-        // Gets or sets output
+        // Gets or sets output 输出
         public int Output
         {
             get { return _output; }
@@ -64,7 +67,7 @@ namespace InterpreterExample1
     }
 
     /// <summary>
-    /// The 'AbstractExpression' class
+    /// The 'AbstractExpression' class 抽象的解释器
     /// </summary>
     abstract class Expression
     {
@@ -73,23 +76,23 @@ namespace InterpreterExample1
             if (context.Input.Length == 0)
                 return;
 
-            if (context.Input.StartsWith(Nine()))
+            if (context.Input.StartsWith(Nine())) // 9是2个字符
             {
                 context.Output += (9 * Multiplier());
                 context.Input = context.Input.Substring(2);
             }
-            else if (context.Input.StartsWith(Four()))
+            else if (context.Input.StartsWith(Four())) // 4是2个字符
             {
                 context.Output += (4 * Multiplier());
                 context.Input = context.Input.Substring(2);
             }
-            else if (context.Input.StartsWith(Five()))
+            else if (context.Input.StartsWith(Five()))// 5是1个字符
             {
                 context.Output += (5 * Multiplier());
                 context.Input = context.Input.Substring(1);
             }
 
-            while (context.Input.StartsWith(One()))
+            while (context.Input.StartsWith(One()))// 1是一个字符
             {
                 context.Output += (1 * Multiplier());
                 context.Input = context.Input.Substring(1);
@@ -104,9 +107,10 @@ namespace InterpreterExample1
     }
 
     /// <summary>
-    /// A 'TerminalExpression' class
+    /// A 'TerminalExpression' class 终端解释器
     /// <remarks>
-    /// Thousand checks for the Roman Numeral M 
+    /// Thousand checks for the Roman Numeral M
+    /// 1000位数的检测  罗马数字M
     /// </remarks>
     /// </summary>
     class ThousandExpression : Expression
@@ -120,8 +124,10 @@ namespace InterpreterExample1
 
     /// <summary>
     /// A 'TerminalExpression' class
+    /// 具体解释器表达
     /// <remarks>
     /// Hundred checks C, CD, D or CM
+    /// 100位数 检测 C--100  CD--400 D--500 CM--900
     /// </remarks>
     /// </summary>
     class HundredExpression : Expression
@@ -137,6 +143,7 @@ namespace InterpreterExample1
     /// A 'TerminalExpression' class
     /// <remarks>
     /// Ten checks for X, XL, L and XC
+    /// 10位数检测 X,XL,L,XC
     /// </remarks>
     /// </summary>
     class TenExpression : Expression
@@ -152,6 +159,7 @@ namespace InterpreterExample1
     /// A 'TerminalExpression' class
     /// <remarks>
     /// One checks for I, II, III, IV, V, VI, VI, VII, VIII, IX
+    /// 个位数检测
     /// </remarks>
     /// </summary>
     class OneExpression : Expression
