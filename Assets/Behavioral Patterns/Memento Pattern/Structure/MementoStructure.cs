@@ -9,24 +9,29 @@ public class MementoStructure : MonoBehaviour
 {
 	void Start ( )
     {
+        // 创建备份发起者
         Originator o = new Originator();
+        // 设置状态
         o.State = "On";
 
         // Store internal state
+        // 创建存储控制,并创建备份
         Caretaker c = new Caretaker();
         c.Memento = o.CreateMemento();
 
         // Continue changing originator
+        // 继续设置状态
         o.State = "Off";
 
         // Restore saved state
+        // 恢复备份的状态
         o.SetMemento(c.Memento);
 
     }
 }
 
 /// <summary>
-/// The 'Originator' class
+/// The 'Originator' class 发起类
 /// </summary>
 class Originator
 {
@@ -44,12 +49,14 @@ class Originator
     }
 
     // Creates memento 
+    // 创建备份
     public Memento CreateMemento()
     {
         return (new Memento(_state));
     }
 
     // Restores original state
+    // 恢复备份
     public void SetMemento(Memento memento)
     {
         Debug.Log("Restoring state...");
@@ -58,7 +65,7 @@ class Originator
 }
 
 /// <summary>
-/// The 'Memento' class
+/// The 'Memento' class 备份类
 /// </summary>
 class Memento
 {
@@ -78,7 +85,7 @@ class Memento
 }
 
 /// <summary>
-/// The 'Caretaker' class
+/// The 'Caretaker' class 备份管理类
 /// </summary>
 class Caretaker
 {

@@ -6,35 +6,40 @@ using UnityEngine;
 using System.Collections;
 
 //This real-world code demonstrates the Memento pattern which temporarily saves and then restores the SalesProspect's internal state.
-
+//这段真实世界的代码演示了Memento模式，
+//它可以暂时保存然后恢复SalesProspect的内部状态。
 namespace MementoExample1
 {
     public class MementoExample1 : MonoBehaviour
     {
         void Start()
         {
+            // 创建发起 并设置参数
             SalesProspect s = new SalesProspect();
             s.Name = "Bruce";
             s.Phone = "(412) 256-6666";
             s.Budget = 25000.0;
 
             // Store internal state
+            // 存储状态,被传给备份管理
             ProspectMemory m = new ProspectMemory();
             m.Memento = s.SaveMemento();
 
             // Continue changing originator
+            // 继续修改源数据
             s.Name = "Oliver";
             s.Phone = "(310) 209-8888";
             s.Budget = 1000000.0;
 
             // Restore saved state
+            // 恢复备份
             s.RestoreMemento(m.Memento);
 
         }
     }
 
     /// <summary>
-    /// The 'Originator' class
+    /// The 'Originator' class 发起类
     /// </summary>
     class SalesProspect
     {
@@ -76,6 +81,7 @@ namespace MementoExample1
         }
 
         // Stores memento
+        // 存储备份 返回备份
         public Memento SaveMemento()
         {
             Debug.Log("\nSaving state --\n");
@@ -83,6 +89,7 @@ namespace MementoExample1
         }
 
         // Restores memento
+        // 恢复备份
         public void RestoreMemento(Memento memento)
         {
             Debug.Log("\nRestoring state --\n");
@@ -93,7 +100,7 @@ namespace MementoExample1
     }
 
     /// <summary>
-    /// The 'Memento' class
+    /// The 'Memento' class 备份类
     /// </summary>
     class Memento
     {
@@ -132,7 +139,7 @@ namespace MementoExample1
     }
 
     /// <summary>
-    /// The 'Caretaker' class
+    /// The 'Caretaker' class 备份类的管理
     /// </summary>
     class ProspectMemory
     {
