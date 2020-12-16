@@ -15,6 +15,18 @@
  *
  **/
 
+/*
+ * 用于处理相关对象之间的通信（同事）。
+ *
+ * 所有通信均由调解人处理。
+ * 同事们不需要知道对方的任何事情
+ *
+ * GOF：通过封装不同对象集的方式，允许松散耦合。
+ * 彼此互动和交流。
+ * 每个对象集的数量相互独立地变化。
+ *
+ *
+ **/
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
@@ -26,6 +38,7 @@ namespace MediatorExample2
     {
 	    void Start ( )
 	    {
+            // 股票中介
             StockMediator nyse = new StockMediator();
 
             // important here is:
@@ -33,6 +46,11 @@ namespace MediatorExample2
             // they could be totally different objects and calculate stuff different or so
             // but still be able to talk to the mediator the same easy way
             // that's why we have different objects here:
+            //重要的是：
+            //在这个例子中，他们两个可能做的事情没有什么不同，但是。
+            // 它们可能是完全不同的对象，或者计算的东西也不一样
+            //但仍能以同样简单的方式与调解人交谈。
+            //这就是为什么我们在这里有不同的对象。
             GormanSlacks broker = new GormanSlacks(nyse);
             JTPoorman broker2 = new JTPoorman(nyse);
 
@@ -42,6 +60,9 @@ namespace MediatorExample2
             // because they call methods on the same mediator object they talk to the same mediator
             // who handles all the stock exanche and keeps track of that. so the brokers by themselves
             // don't know anything about each other. which is a good thing :-)
+            // 因为它们调用同一中介对象上的方法，所以它们与同一中介对话。
+            // 中介处理所有的股票外流，并保持跟踪，所以经纪人自己
+            // 彼此都不知道对方的情况，这是件好事:-)
             broker.SaleOffer(Stock.MSFT, 100);
             broker.SaleOffer(Stock.GOOG, 50);
 
@@ -59,6 +80,8 @@ namespace MediatorExample2
 
     // I like using enums more than using strings
     // because it prevents typos and I don't need to remember strings ;)
+    // 比起使用字符串，我更喜欢使用枚举。
+    // 因为它可以防止打字错误，而且我不需要记住字符串;)
     public enum Stock
     {
         MSFT,
@@ -67,6 +90,9 @@ namespace MediatorExample2
     };
 
 
+    /// <summary>
+    /// 股票提供者
+    /// </summary>
     public class StockOffer
     {
         public int stockShares { get; private set; }
@@ -82,8 +108,12 @@ namespace MediatorExample2
     }
 
 
+    /// <summary>
+    /// 抽象用户
+    /// </summary>
     public abstract class Colleague
     {
+        // 了解中介
         private Mediator mediator;
         private int colleagueCode;
 
@@ -109,16 +139,24 @@ namespace MediatorExample2
     }
 
 
+    /// <summary>
+    /// 具体用户 Gorman Slacks
+    /// </summary>
     public class GormanSlacks : Colleague
     {
         // using : base() like here calls the constructor of the base class with the arguments passed in
         // here it calls "Colleague(Mediator mediator)"
+        // 像这里一样使用 : base() 调用基类的构造函数，并将参数传入。
+        //这里它调用 "Colleague(Mediator mediator)"
         public GormanSlacks(Mediator mediator) : base(mediator)
         {
             Debug.Log("Gorman Slacks signed up with the stockexange");
         }
     }
 
+    /// <summary>
+    /// 具体用户2 JT Poorman
+    /// </summary>
     public class JTPoorman : Colleague
     {
         public JTPoorman(Mediator mediator) : base(mediator)
@@ -132,14 +170,23 @@ namespace MediatorExample2
 
 
 
+    /// <summary>
+    /// 抽象中介者
+    /// </summary>
     public interface Mediator
     {
+        // 增加同事
         void AddColleague(Colleague colleague);
+        // 卖出
         void SaleOffer(Stock stock, int shares, int code);
+        // 买入
         void BuyOffer(Stock stock, int shares, int code);
     }
 
 
+    /// <summary>
+    /// 股票中介者
+    /// </summary>
     public class StockMediator : Mediator
     {
         private List<Colleague> colleagues;
@@ -163,6 +210,7 @@ namespace MediatorExample2
             colleague.SetCode(colleagueCodes);
         }
 
+        // 卖出
         public void SaleOffer(Stock stock, int shares, int code)
         {
             bool stockSold = false;
@@ -196,10 +244,12 @@ namespace MediatorExample2
             bool stockBought = false;
 
             // see if someone is willing to buy:
+            // 找到所有卖方
             for (int i = 0; i < sellOffers.Count; i++)
             {
                 StockOffer offer = sellOffers[i];
                 // check if the stock is the same:
+                // 检测有没有需求一样的卖方
                 if (offer.stock == stock && offer.stockShares == shares)
                 {
                     Debug.Log(shares + " shares of " + stock + " stocks bought by colleague with code " + code);
@@ -211,6 +261,7 @@ namespace MediatorExample2
                 if (stockBought) break;
             }
 
+            // 如果股票没有买成功, 加入买方列表
             if (!stockBought)
             {
                 Debug.Log(shares + " shares of " + stock + " stocks added to inventory");
@@ -221,6 +272,7 @@ namespace MediatorExample2
         #endregion
 
 
+        // 打印交易者的信息
         public void PrintStockOfferings()
         {
             Debug.Log("For Sale: " + sellOffers.Count);

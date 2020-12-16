@@ -13,12 +13,16 @@ The classes and objects participating in this pattern are:
 
 ### Mediator  (IChatroom)
 * defines an interface for communicating with Colleague objects
+* 定义了一个与Colleague对象进行通信的接口
 
 ### ConcreteMediator  (Chatroom)
 * implements cooperative behavior by coordinating Colleague objects
 * knows and maintains its colleagues
+* 通过协调Colleague对象实现合作行为。
+* 了解并维护其Colleague
 
 ### Colleague classes  (Participant)
 * each Colleague class knows its Mediator object
 * each colleague communicates with its mediator whenever it would have otherwise communicated with another colleague
-
+* 每个Colleague类都知道它的Mediator对象。
+* 每位同事在与另一位同事沟通时，都会与其调解人进行沟通

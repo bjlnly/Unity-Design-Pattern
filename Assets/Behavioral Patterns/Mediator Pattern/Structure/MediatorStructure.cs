@@ -9,14 +9,17 @@ public class MediatorStructure : MonoBehaviour
 {
     void Start()
     {
+        // 创建中介
         ConcreteMediator m = new ConcreteMediator();
 
+        // 创建2个交互对象
         ConcreteColleague1 c1 = new ConcreteColleague1(m);
         ConcreteColleague2 c2 = new ConcreteColleague2(m);
 
         m.Colleague1 = c1;
         m.Colleague2 = c2;
 
+        // c1发送  c2接收  相互解耦
         c1.Send("How are you?");
         c2.Send("Fine, thanks");
 
@@ -24,7 +27,7 @@ public class MediatorStructure : MonoBehaviour
 }
 
 /// <summary>
-/// The 'Mediator' abstract class
+/// The 'Mediator' abstract class 抽象的中介者
 /// </summary>
 abstract class Mediator
 {
@@ -32,7 +35,7 @@ abstract class Mediator
 }
 
 /// <summary>
-/// The 'ConcreteMediator' class
+/// The 'ConcreteMediator' class 具体的中介者
 /// </summary>
 class ConcreteMediator : Mediator
 {
@@ -49,6 +52,7 @@ class ConcreteMediator : Mediator
         set { _colleague2 = value; }
     }
 
+    // 两个Colleague隔离
     public override void Send(string message,Colleague colleague)
     {
         if (colleague == _colleague1)
@@ -63,10 +67,11 @@ class ConcreteMediator : Mediator
 }
 
 /// <summary>
-/// The 'Colleague' abstract class
+/// The 'Colleague' abstract class 抽象的Colleague交互类
 /// </summary>
 abstract class Colleague
 {
+    // Colleague可以不用知道别的Colleague,但要知道mediator中介者
     protected Mediator mediator;
 
     // Constructor
@@ -77,7 +82,7 @@ abstract class Colleague
 }
 
 /// <summary>
-/// A 'ConcreteColleague' class
+/// A 'ConcreteColleague' class 具体的Colleague
 /// </summary>
 class ConcreteColleague1 : Colleague
 {
@@ -87,11 +92,13 @@ class ConcreteColleague1 : Colleague
     {
     }
 
+    // 发消息
     public void Send(string message)
     {
         mediator.Send(message, this);
     }
 
+    // 接消息
     public void Notify(string message)
     {
         Debug.Log("Colleague1 gets message: "+ message);
@@ -99,7 +106,7 @@ class ConcreteColleague1 : Colleague
 }
 
 /// <summary>
-/// A 'ConcreteColleague' class
+/// A 'ConcreteColleague' class 第二个Colleague
 /// </summary>
 class ConcreteColleague2 : Colleague
 {
