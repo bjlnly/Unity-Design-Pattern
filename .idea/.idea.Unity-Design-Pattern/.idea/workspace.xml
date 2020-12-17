@@ -19,12 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d8c5e3b-b84c-4ae8-9209-9abb1b4fc342" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Design-Pattern/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Design-Pattern/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Memento Pattern/Example1/MementoExample1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Memento Pattern/Example1/MementoExample1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Memento Pattern/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Memento Pattern/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Memento Pattern/Structure/MementoStructure.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Memento Pattern/Structure/MementoStructure.cs" afterDir="false" />
-    </list>
+    <list default="true" id="7d8c5e3b-b84c-4ae8-9209-9abb1b4fc342" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +39,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Structural Patterns/Composite Pattern/Exmaple2/CompositePatternExample2.cs" />
         <option value="$PROJECT_DIR$/Assets/Structural Patterns/Decorator Pattern/README.md" />
         <option value="$PROJECT_DIR$/Assets/Structural Patterns/Decorator Pattern/Structure/DecoratorStructure.cs" />
         <option value="$PROJECT_DIR$/Assets/Structural Patterns/Decorator Pattern/Exmaple1/DecoratorPatternExample1.cs" />
@@ -95,6 +89,7 @@
         <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Memento Pattern/README.md" />
         <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Memento Pattern/Structure/MementoStructure.cs" />
         <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Memento Pattern/Example1/MementoExample1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Memento Pattern/Example2/MementoExample2.cs" />
       </list>
     </option>
   </component>
@@ -154,6 +149,7 @@
       <workItem from="1606992273106" duration="595000" />
       <workItem from="1607043924629" duration="20160000" />
       <workItem from="1607927901314" duration="24194000" />
+      <workItem from="1608106014945" duration="2435000" />
     </task>
     <servers />
   </component>

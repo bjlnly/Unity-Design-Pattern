@@ -14,16 +14,23 @@ The classes and objects participating in this pattern are:
 ### Subject  (Stock)
 * knows its observers. Any number of Observer objects may observe a subject
 * provides an interface for attaching and detaching Observer objects.
+* 了解其观察者。任何数量的观察者对象都可以观察一个主体。
+* 提供了一个附加和分离观察者对象的接口。
 
 ### ConcreteSubject  (IBM)
 * stores state of interest to ConcreteObserver
 * sends a notification to its observers when its state changes
+* 存储ConcreteObserver感兴趣的状态。
+* 当其状态发生变化时，向其观察者发出通知。
 
 ### Observer  (IInvestor)
 * defines an updating interface for objects that should be notified of changes in a subject.
+* 定义了一个对象的更新接口，该接口应通知对象的变化。
 
-### ConcreteObserver  (Investor)
 * maintains a reference to a ConcreteSubject object
+### ConcreteObserver  (Investor)
 * stores state that should stay consistent with the subject's
 * implements the Observer updating interface to keep its state consistent with the subject's
-
+* 维护对ConcreteSubject对象的引用。
+* 存储状态应与subject的状态保持一致。
+* 实现Observer更新接口，使其状态与subject的状态保持一致。
