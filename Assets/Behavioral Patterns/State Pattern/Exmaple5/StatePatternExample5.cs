@@ -34,8 +34,10 @@ namespace StatePatternExample5
     /// </summary>
     public class Context
     {
+        // 内聚一个状态
         State m_State = null;
 
+        // 传递消息给状态
         public void Request(int Value)
         {
             m_State.Handle(Value);
@@ -59,6 +61,7 @@ namespace StatePatternExample5
         {
             m_Context = theContext;
         }
+        // 声明行为
         public abstract void Handle(int Value);
     }
 

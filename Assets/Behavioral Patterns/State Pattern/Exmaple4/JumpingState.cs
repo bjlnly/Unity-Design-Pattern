@@ -5,6 +5,9 @@
 using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// 跳起状态
+/// </summary>
 public class JumpingState : HeroineBaseState
 {
 

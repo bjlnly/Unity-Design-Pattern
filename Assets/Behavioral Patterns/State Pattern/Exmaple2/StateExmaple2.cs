@@ -11,6 +11,7 @@ namespace StateExmaple2
     {
         void Start()
         {
+            // 创建atm机  执行各种操作  状态在内部转化
             ATMMachine atm = new ATMMachine();
             atm.InsertCard();
             atm.EjectCard();
@@ -23,8 +24,10 @@ namespace StateExmaple2
     }
 
     // State Interface
+    // 状态接口
     public interface ATMState
     {
+        // 声明行为
         void InsertCard();
         void EjectCard();
         void InsertPin(int pinEntered);
@@ -32,6 +35,7 @@ namespace StateExmaple2
     }
 
 
+    // ATM机器
     public class ATMMachine
     {
         public ATMState hasCard { get; protected set; }
@@ -59,6 +63,7 @@ namespace StateExmaple2
             }
         }
 
+        // 设置状态
         public void SetATMState(ATMState state)
         {
             atmState = state;
@@ -69,6 +74,11 @@ namespace StateExmaple2
             cashInMachine = newCash;
         }
 
+        // 对外的表现
+        //===================================================================================
+        // 这里是我们需要实现的Proxy设计模式中的方法，以使接口正常工作
+        // 但请记住：ATMMachine的以下方法与状态机模式没有任何关系。
+        //===================================================================================
         public void InsertCard()
         {
             atmState.InsertCard();
@@ -93,7 +103,7 @@ namespace StateExmaple2
         // Here come the Methods we need to implement from the Proxy Design Pattern to make the interface work
         // but remember: the following methods for ATMMachine don't have anything to do with the state machine pattern
         //===================================================================================
-
+        
         public ATMState GetCurrentState()
         {
             return atmState;
@@ -109,6 +119,9 @@ namespace StateExmaple2
 
 
 
+    /// <summary>
+    /// 具体的状态  -- 有卡插入
+    /// </summary>
     public class HasCard : ATMState
     {
         protected ATMMachine atm;
@@ -153,7 +166,9 @@ namespace StateExmaple2
     }
 
 
-
+/// <summary>
+/// 无卡状态
+/// </summary>
     public class NoCard : ATMState
     {
         protected ATMMachine atm;
@@ -186,7 +201,9 @@ namespace StateExmaple2
     }
 
 
-
+/// <summary>
+/// PIN输入的状态
+/// </summary>
     public class HasPin : ATMState
     {
         protected ATMMachine atm;
@@ -237,7 +254,9 @@ namespace StateExmaple2
     }
 
 
-
+/// <summary>
+/// 无钞状态
+/// </summary>
     public class NoCash : ATMState
     {
         protected ATMMachine atm;

@@ -5,6 +5,9 @@
 using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// 待机状态
+/// </summary>
 public class StandingState : HeroineBaseState
 {
     private Heroine _heroine;

@@ -8,7 +8,9 @@ using System.Collections;
 //This real-world code demonstrates the State pattern which allows an Account to behave differently depending on its balance. 
 //The difference in behavior is delegated to State objects called RedState, SilverState and GoldState. 
 //These states represent overdrawn accounts, starter accounts, and accounts in good standing.
-
+//这段真实世界的代码演示了状态模式，它允许一个账户根据其余额的不同而采取不同的行为。
+//行为上的差异被委托给名为RedState、SilverState和GoldState的状态对象。
+//这些状态代表透支账户、启动账户和信誉良好的账户。
 namespace StateExample1
 {
     public class StateExample1 : MonoBehaviour
@@ -16,9 +18,11 @@ namespace StateExample1
         void Start()
         {
             // Open a new account
+            // 创建一个账户
             Account account = new Account("Jim Johnson");
 
             // Apply financial transactions
+            // 账户做操作 但是其实账户的行为随着余额的不同会有不同反馈
             account.Deposit(500.0);
             account.Deposit(300.0);
             account.Deposit(550.0);
@@ -29,10 +33,11 @@ namespace StateExample1
     }
 
     /// <summary>
-    /// The 'State' abstract class
+    /// The 'State' abstract class 抽象状态
     /// </summary>
     abstract class State
     {
+        // 持有账户的引用
         protected Account account;
         protected double balance;
 
@@ -53,6 +58,7 @@ namespace StateExample1
             set { balance = value; }
         }
 
+        // 声明具体的行为
         public abstract void Deposit(double amount);
         public abstract void Withdraw(double amount);
         public abstract void PayInterest();
@@ -60,9 +66,9 @@ namespace StateExample1
 
 
     /// <summary>
-    /// A 'ConcreteState' class
+    /// A 'ConcreteState' class 具体的状态
     /// <remarks>
-    /// Red indicates that account is overdrawn 
+    /// Red indicates that account is overdrawn 透支 
     /// </remarks>
     /// </summary>
     class RedState : State
@@ -86,18 +92,22 @@ namespace StateExample1
             _serviceFee = 15.00;
         }
 
+        // 红名下的具体行为
+        // 存钱
         public override void Deposit(double amount)
         {
             balance += amount;
             StateChangeCheck();
         }
 
+        // 取钱
         public override void Withdraw(double amount)
         {
             amount = amount - _serviceFee;
             Debug.Log("No funds available for withdrawal!");
         }
 
+        // 支付利息
         public override void PayInterest()
         {
             // No interest is paid
@@ -113,9 +123,9 @@ namespace StateExample1
     }
 
     /// <summary>
-    /// A 'ConcreteState' class
+    /// A 'ConcreteState' class 具体状态
     /// <remarks>
-    /// Silver indicates a non-interest bearing state
+    /// Silver indicates a non-interest bearing state 银色代表无息
     /// </remarks>
     /// </summary>
     class SilverState : State
@@ -174,9 +184,9 @@ namespace StateExample1
     }
 
     /// <summary>
-    /// A 'ConcreteState' class
+    /// A 'ConcreteState' class 具体状态3 
     /// <remarks>
-    /// Gold indicates an interest bearing state
+    /// Gold indicates an interest bearing state 金色标识付息状态 
     /// </remarks>
     /// </summary>
     class GoldState : State
@@ -234,10 +244,11 @@ namespace StateExample1
     }
 
     /// <summary>
-    /// The 'Context' class
+    /// The 'Context' class 上下文类 -- 账户
     /// </summary>
     class Account
     {
+        // 私有状态
         private State _state;
         private string _owner;
 

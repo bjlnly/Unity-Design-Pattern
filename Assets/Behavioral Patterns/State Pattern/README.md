@@ -14,10 +14,13 @@ The classes and objects participating in this pattern are:
 ### Context  (Account)
 * defines the interface of interest to clients
 * maintains an instance of a ConcreteState subclass that defines the current state.
+* 定义Client感兴趣的接口
+* 维护一个定义当前状态的ConcreteState子类的实例。
 
 ### State  (State)
 * defines an interface for encapsulating the behavior associated with a particular state of the Context.
+* 定义了一个接口，用于封装与上下文特定状态相关的行为。
 
 ### Concrete State  (RedState, SilverState, GoldState)
 * each subclass implements a behavior associated with a state of Context
-
+* 每个子类都实现了一个与Context状态相关联的行为。

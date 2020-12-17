@@ -4,9 +4,12 @@
 
 using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// 女主角
+/// </summary>
 public class Heroine
 {
+    // 持有抽象状态
     HeroineBaseState _state;
 
     public Heroine()

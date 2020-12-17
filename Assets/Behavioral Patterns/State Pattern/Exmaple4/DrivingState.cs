@@ -4,7 +4,9 @@
 
 using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// 具体状态 -- 开车
+/// </summary>
 public class DrivingState : HeroineBaseState
 {
     private Heroine _heroine;

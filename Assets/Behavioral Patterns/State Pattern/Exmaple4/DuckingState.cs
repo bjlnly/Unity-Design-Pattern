@@ -4,7 +4,9 @@
 
 using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// 下蹲状态
+/// </summary>
 public class DuckingState : HeroineBaseState
 {
     private Heroine _heroine;
