@@ -10,6 +10,10 @@ using System.Collections;
  You create an abstract class that contains a method called the Template Method
  The Template method contains a series of method calls that every sublcass object will call
  The subclass objects can override some of the method calls
+ 用于创建一组必须执行类似方法的子类。
+ 你创建了一个抽象类，其中包含一个叫做模板方法的方法。
+ Template方法包含一系列方法调用，每个子lcass对象都会调用该方法
+ 子类对象可以覆盖一些方法调用。
 */
 
 namespace TemplateMethodPatternExample1
@@ -19,20 +23,28 @@ namespace TemplateMethodPatternExample1
     {
         void Start()
         {
+            // 创建策略A1
             Hoagie cust12Hoagie = new ItalienHoagie();
             cust12Hoagie.MakeSandwich();
-
+            
+            // 创建策略A2
             Hoagie cust13Hoagie = new VeggieHoagie();
             cust13Hoagie.MakeSandwich();
         }
     }
 
+    /// <summary>
+    /// 抽象模板
+    /// </summary>
     public abstract class Hoagie
     {
+        /// <summary>
+        /// 模板步骤
+        /// </summary>
         public void MakeSandwich()
         {
             Debug.Log("Making new Sandwich");
-
+            
             CutBun();
 
             if (CustomerWantsMeat())
@@ -57,6 +69,7 @@ namespace TemplateMethodPatternExample1
 
             WrapTheHoagie();
         }
+        // 固定通用模板步奏
         protected abstract void AddMeat();
         protected abstract void AddCheese();
         protected abstract void AddVegetables();
@@ -67,6 +80,7 @@ namespace TemplateMethodPatternExample1
         protected virtual bool CustomerWantsVegetables() { return true; }
         protected virtual bool CustomerWantsCondiments() { return true; }
 
+        // 无需子类执行的步骤
         protected void CutBun()
         {
             Debug.Log("Bun is Cut");
@@ -78,7 +92,9 @@ namespace TemplateMethodPatternExample1
         }
     }
 
-
+    /// <summary>
+    /// 具体的模板策略
+    /// </summary>
     public class ItalienHoagie : Hoagie
     {
         protected override void AddMeat()
@@ -103,7 +119,9 @@ namespace TemplateMethodPatternExample1
     }
 
 
-
+    /// <summary>
+    /// 具体的模板策略2
+    /// </summary>
     public class VeggieHoagie : Hoagie
     {
         protected override void AddMeat()
@@ -129,11 +147,13 @@ namespace TemplateMethodPatternExample1
 
     }
 
-
+    // Bad代码演示
     namespace BadExample
     {
         // this way you would have to rewrite a lot of code
         // especially if something changes or another class differs and does e.g. not AddMeat()
+        //这样一来，你将不得不重写很多代码。
+        // 特别是当某些东西改变了，或者另一个类不同，例如没有AddMeat()
         public class ItalienHoagie
         {
             public void MakeSandwich()
