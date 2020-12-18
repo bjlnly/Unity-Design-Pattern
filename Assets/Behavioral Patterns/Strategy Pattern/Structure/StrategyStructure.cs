@@ -26,18 +26,20 @@ namespace StrategyStructure
     }
 
     /// <summary>
-    /// The 'Strategy' abstract class
+    /// The 'Strategy' abstract class 抽象策略
     /// </summary>
     abstract class Strategy
     {
+        // 提供统一接口给 Context使用
         public abstract void AlgorithmInterface();
     }
 
     /// <summary>
-    /// A 'ConcreteStrategy' class
+    /// A 'ConcreteStrategy' class 具体策略
     /// </summary>
     class ConcreteStrategyA : Strategy
     {
+        // 实现策略接口
         public override void AlgorithmInterface()
         {
             Debug.Log("Called ConcreteStrategyA.AlgorithmInterface()");
@@ -45,7 +47,7 @@ namespace StrategyStructure
     }
 
     /// <summary>
-    /// A 'ConcreteStrategy' class
+    /// A 'ConcreteStrategy' class 具体策略B
     /// </summary>
     class ConcreteStrategyB : Strategy
     {
@@ -56,7 +58,7 @@ namespace StrategyStructure
     }
 
     /// <summary>
-    /// A 'ConcreteStrategy' class
+    /// A 'ConcreteStrategy' class 具体策略C
     /// </summary>
     class ConcreteStrategyC : Strategy
     {
@@ -67,10 +69,11 @@ namespace StrategyStructure
     }
 
     /// <summary>
-    /// The 'Context' class
+    /// The 'Context' class 选择策略的对象
     /// </summary>
     class Context
     {
+        // 设置策略
         private Strategy _strategy;
 
         // Constructor
@@ -79,6 +82,7 @@ namespace StrategyStructure
             this._strategy = strategy;
         }
 
+        // 实施策略
         public void ContextInterface()
         {
             _strategy.AlgorithmInterface();

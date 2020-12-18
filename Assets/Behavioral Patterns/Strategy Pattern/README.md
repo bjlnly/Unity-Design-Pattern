@@ -13,12 +13,16 @@ The classes and objects participating in this pattern are:
 
 ### Strategy  (SortStrategy)
 * declares an interface common to all supported algorithms. Context uses this interface to call the algorithm defined by a ConcreteStrategy
+* 声明一个所有支持的算法都通用的接口。Context使用这个接口来调用ConcreteStrategy定义的算法。
 
 ### ConcreteStrategy  (QuickSort, ShellSort, MergeSort)
 * implements the algorithm using the Strategy interface
+* 使用Strategy接口实现算法。
 
 ### Context  (SortedList)
 * is configured with a ConcreteStrategy object
 * maintains a reference to a Strategy object
 * may define an interface that lets Strategy access its data.
-
+* 配置了一个ConcreteStrategy对象。
+* 维持对Strategy对象的引用
+* 可定义一个接口，使Strategy能够访问其数据。
