@@ -22,10 +22,8 @@
     <list default="true" id="7d8c5e3b-b84c-4ae8-9209-9abb1b4fc342" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Design-Pattern/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Design-Pattern/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Design-Pattern/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Design-Pattern/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Visitor Pattern/Exmaple1/VisitorPatternExample1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Visitor Pattern/Exmaple1/VisitorPatternExample1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Visitor Pattern/Exmaple2/VisitorPatternExample2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Visitor Pattern/Exmaple2/VisitorPatternExample2.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Visitor Pattern/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Visitor Pattern/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Visitor Pattern/Structure/VisitorStructure.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Visitor Pattern/Structure/VisitorStructure.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Behavioral Patterns/Memento Pattern/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Behavioral Patterns/Memento Pattern/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +44,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example3/Command.cs" />
-        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example3/MoveCommand.cs" />
         <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example3/MoveCommandReceiver.cs" />
         <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example3/InputHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/Example2/TestCommandPattern.cs" />
@@ -61,11 +57,9 @@
         <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Iterator Pattern/Structure/IteratorStructure.cs" />
         <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Iterator Pattern/Example1/IteratorExample1.cs" />
         <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Iterator Pattern/Example2/IteratorExample2.cs" />
-        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Mediator Pattern/README.md" />
         <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Mediator Pattern/Structure/MediatorStructure.cs" />
         <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Mediator Pattern/Example1/MediatorExample1.cs" />
         <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Mediator Pattern/Example2/MediatorExample2.cs" />
-        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Memento Pattern/README.md" />
         <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Memento Pattern/Structure/MementoStructure.cs" />
         <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Memento Pattern/Example1/MementoExample1.cs" />
         <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Memento Pattern/Example2/MementoExample2.cs" />
@@ -90,13 +84,17 @@
         <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Strategy Pattern/Structure/StrategyStructure.cs" />
         <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Strategy Pattern/Exmaple1/StrategyPatternExample1.cs" />
         <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Strategy Pattern/Example2/StrategyPatternExample2.cs" />
-        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Template Method Pattern/README.md" />
         <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Template Method Pattern/Structure/TemplateMethodStructure.cs" />
         <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Template Method Pattern/Exmaple1/TemplateMethodPatternExample1.cs" />
         <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Visitor Pattern/README.md" />
         <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Visitor Pattern/Structure/VisitorStructure.cs" />
         <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Visitor Pattern/Exmaple1/VisitorPatternExample1.cs" />
         <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Visitor Pattern/Exmaple2/VisitorPatternExample2.cs" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Command Pattern/README.md" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Mediator Pattern/README.md" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Memento Pattern/README.md" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Template Method Pattern/README.md" />
+        <option value="$PROJECT_DIR$/Assets/Behavioral Patterns/Behavioral pattern.md" />
       </list>
     </option>
   </component>
@@ -159,7 +157,7 @@
       <workItem from="1608106014945" duration="16449000" />
       <workItem from="1608514452574" duration="82000" />
       <workItem from="1608514686126" duration="83000" />
-      <workItem from="1608515665315" duration="1373000" />
+      <workItem from="1608515665315" duration="6554000" />
     </task>
     <servers />
   </component>
@@ -208,9 +206,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1608516168802" />
-    <state x="806" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608516328783">
+    <state x="806" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608522147794">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="806" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1608516328783" />
+    <state x="806" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1608522147794" />
   </component>
 </project>

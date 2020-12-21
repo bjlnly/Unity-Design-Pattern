@@ -6,6 +6,7 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Behavioral Patterns" t="Include">
+          <e p="Behavioral pattern.md" t="Include" />
           <e p="Chain of Responsibility Pattern" t="Include">
             <e p="Example1" t="Include">
               <e p="ChainOfResponsibilityExample1.cs" t="Include" />
