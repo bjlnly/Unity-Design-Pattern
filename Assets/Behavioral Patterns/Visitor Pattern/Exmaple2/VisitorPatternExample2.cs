@@ -8,35 +8,42 @@ using System.Collections.Generic;
 
 namespace VisitorPatternExample2
 {
+    /// <summary>
+    /// 继承不影响访问,因为元素本身都继承了抽象的接口
+    /// </summary>
     public class VisitorPatternExample2 : MonoBehaviour
     {
         void Start()
         {
             // Setup employee collection
+            // 设置员工结构,并加入员工
             Employees e = new Employees();
             e.Attach(new Clerk());
             e.Attach(new Director());
             e.Attach(new President());
 
             // Employees are 'visited'
+            // 赋予行政和财务访问员工的权限,并让其进行不同的操作
             e.Accept(new IncomeVisitor());
             e.Accept(new VacationVisitor());
         }
 
 
         /// <summary>
-        /// The 'Visitor' interface
+        /// The 'Visitor' interface 抽象的Visitor
         /// </summary>
         interface IVisitor
         {
+            // 定义Visit方法,传入element
             void Visit(Element element);
         }
 
         /// <summary>
-        /// A 'ConcreteVisitor' class
+        /// A 'ConcreteVisitor' class 具体的Visitor
         /// </summary>
         class IncomeVisitor : IVisitor
         {
+            // 实现Visitor方法,操作element
             public void Visit(Element element)
             {
                 Employee employee = element as Employee;
@@ -51,10 +58,11 @@ namespace VisitorPatternExample2
         }
 
         /// <summary>
-        /// A 'ConcreteVisitor' class
+        /// A 'ConcreteVisitor' class 具体的visitor
         /// </summary>
         class VacationVisitor : IVisitor
         {
+            // 实现visit方法,操作element
             public void Visit(Element element)
             {
                 Employee employee = element as Employee;
@@ -68,15 +76,16 @@ namespace VisitorPatternExample2
         }
 
         /// <summary>
-        /// The 'Element' abstract class
+        /// The 'Element' abstract class 抽象的元素
         /// </summary>
         abstract class Element
         {
+            // 定义Accept方法,用于把自己传给Visitor
             public abstract void Accept(IVisitor visitor);
         }
 
         /// <summary>
-        /// The 'ConcreteElement' class
+        /// The 'ConcreteElement' class 具体的Element
         /// </summary>
         class Employee : Element
         {
@@ -114,6 +123,10 @@ namespace VisitorPatternExample2
                 set { _vacationDays = value; }
             }
 
+            /// <summary>
+            /// 实现Accept方法,把自己传给Visitor
+            /// </summary>
+            /// <param name="visitor"></param>
             public override void Accept(IVisitor visitor)
             {
                 visitor.Visit(this);
@@ -121,10 +134,11 @@ namespace VisitorPatternExample2
         }
 
         /// <summary>
-        /// The 'ObjectStructure' class
+        /// The 'ObjectStructure' class 数据结构类 Structure
         /// </summary>
         class Employees
         {
+            // 维护element的列表
             private List<Employee> _employees = new List<Employee>();
 
             public void Attach(Employee employee)
@@ -137,6 +151,10 @@ namespace VisitorPatternExample2
                 _employees.Remove(employee);
             }
 
+            /// <summary>
+            /// 提供接口,可以让Visitor访问到element
+            /// </summary>
+            /// <param name="visitor"></param>
             public void Accept(IVisitor visitor)
             {
                 foreach (Employee e in _employees)
@@ -148,7 +166,10 @@ namespace VisitorPatternExample2
 
         // Three employee types
 
-        class Clerk : Employee
+        /// <summary>
+        /// 元素的继承
+        /// </summary>
+        class Clerk : Employee 
         {
             // Constructor
             public Clerk()

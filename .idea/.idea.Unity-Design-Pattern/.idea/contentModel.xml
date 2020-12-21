@@ -92,6 +92,9 @@
               <e p="MementoStructure.cs" t="Include" />
             </e>
           </e>
+          <e p="Null Object Pattern" t="Include">
+            <e p="NullObjectPatternExample1.cs" t="Include" />
+          </e>
           <e p="Observer Pattern" t="Include">
             <e p="Example1" t="Include">
               <e p="ObserverExample1.cs" t="Include" />
