@@ -161,6 +161,7 @@ namespace EventQueuePatternExample3
         public void UnRegisterDelegates()
         {
             EventManger.Instance.UnRegisterEvent(EventType.UI_Event1);
+            EventManger.Instance.UnRegisterEvent(EventType.UI_Event2);
         }
 
         private void OnEventProcess1(BaseEventMsg msg)
